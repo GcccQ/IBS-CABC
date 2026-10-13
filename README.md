@@ -10,6 +10,10 @@ records; and scripts to verify and rebuild the paper results. Original solver
 files are preserved byte for byte. See [中文说明](README_zh.md),
 [the code map](docs/CORE_CODE.md) and [the result map](docs/PAPER_RESULTS.md).
 
+The manuscript and figure images/PDFs are excluded from Git publication.
+Report scripts generate figures locally under ignored `reruns/`; GitHub Actions
+uploads validation logs only. `tools/check_publication_scope.py` enforces this scope.
+
 ## Install
 
 Use 64-bit **Python 3.10 or 3.11**. Run from the repository root:

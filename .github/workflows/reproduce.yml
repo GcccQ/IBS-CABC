@@ -25,6 +25,7 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements-lock.txt -c requirements-constraints.txt -e ./cssd-kg-edr -e ./cssd-comparison-baselines -e ./cssd-dbd-case-study -e ./kraul-dbd-reproduction
       - run: python -m pip check
+      - run: python tools/check_publication_scope.py
       - run: python tools/verify_files.py
       - run: python tools/prepare_data.py
       - run: python tools/prepare_results.py
@@ -37,4 +38,4 @@ jobs:
         if: always()
         with:
           name: reproduction-${{ matrix.os }}
-          path: reruns/
+          path: reruns/delivery_checks/

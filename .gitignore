@@ -12,3 +12,13 @@ tmp/
 **/outputs/**/raw/*.unpacking
 **/outputs/**/tables/job_level_schedules.csv
 *.download
+# Publication scope: manuscripts and figure files stay local.
+**/manuscript/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.doc
+*.docx
+*.tex
