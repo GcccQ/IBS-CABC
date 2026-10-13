@@ -1,5 +1,5 @@
 {
-  "copied_files": 310,
+  "copied_files": 309,
   "algorithm_and_result_bytes_changed": false,
   "files": [
     {
@@ -801,11 +801,6 @@
       "destination": "kraul-dbd-reproduction/src/kraul_dbd_reproduction/ga.py",
       "sha256": "43487fbb302ee922e9ff30518756b87b989560f650c60b302e9395f68e4ba880",
       "bytes": 23685
-    },
-    {
-      "destination": "kraul-dbd-reproduction/src/kraul_dbd_reproduction/merge.py",
-      "sha256": "0c2395494e0860aece9c23d0f17d684553fe581511513146261a1887e988f8cb",
-      "bytes": 44063
     },
     {
       "destination": "kraul-dbd-reproduction/src/kraul_dbd_reproduction/metrics.py",

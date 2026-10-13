@@ -1,0 +1,8 @@
+[
+  {
+    "path": "kraul-dbd-reproduction/src/kraul_dbd_reproduction/merge.py",
+    "original_sha256": "0c2395494e0860aece9c23d0f17d684553fe581511513146261a1887e988f8cb",
+    "release_sha256": "be4d990e6e9034545c87e9cddf1d7bd349ddaafda0650f24a2b36c77e6124e53",
+    "change": "Read filenames from historical Windows absolute paths using PureWindowsPath when replaying schedules on Linux. No optimizer or experimental record changes."
+  }
+]

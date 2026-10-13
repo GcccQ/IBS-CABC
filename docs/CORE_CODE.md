@@ -30,3 +30,8 @@ development versions with historical paper evidence.
 unchanged copied code/configuration/result files. `SHA256SUMS.txt` covers the
 complete published file set. External inputs have their own hash contract in
 `validation/EXTERNAL_ASSETS.json`.
+
+`validation/PORTABILITY_CHANGES.json` separately records the report-only fix
+that resolves historical Windows instance paths when replaying schedules on
+Linux. It includes the original and released file hashes. Optimizer code and
+experimental records are unchanged.

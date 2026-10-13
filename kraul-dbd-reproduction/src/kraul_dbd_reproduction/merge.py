@@ -5,7 +5,7 @@ import csv
 import json
 import math
 import sys
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 from typing import Mapping, Sequence
 
 import matplotlib
@@ -297,7 +297,7 @@ def _three_algorithm_queue_intervals(
                     article_root
                     / "dataset"
                     / "RealWorldInstances365"
-                    / instance_source.name
+                    / PureWindowsPath(instance_path).name
                 )
                 if not portable_source.is_file():
                     raise FileNotFoundError(

@@ -38,3 +38,9 @@ validated the full historical records and executed all three short experiment
 pipelines. Linux CI is configured in `.github/workflows/reproduce.yml` and is
 separate from the local Windows validation. The root README documents the
 wall-clock reproducibility limits and missing historical fixed-scale checkpoints.
+
+The first Linux CI run exposed a Windows-path parsing issue during historical
+schedule replay. The report code now extracts saved instance filenames with
+`PureWindowsPath`; the original and released hashes are recorded in
+`validation/PORTABILITY_CHANGES.json`. Solver code and raw results remain
+unchanged. This fix is covered by rerunning the report checks on both platforms.
