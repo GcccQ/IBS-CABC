@@ -13,17 +13,17 @@ the dependency versions in `requirements-lock.txt` and
 | Formal task dry runs | PASS: 8,000 / 2,730 / 1,001 tasks |
 | Independent Table 8 statistics | PASS |
 | Independent Table 10 statistics | PASS |
-| Fixed-scale runner tests | 23 passed |
+| Fixed-scale runner tests | 20 passed |
 | Core IBS-CABC tests | 54 passed |
 | Comparison baseline tests | 3 passed, 3 skipped |
 | Three-algorithm DBD tests | 8 passed |
-| FFCBSPT/Kraul-GA tests | 20 passed |
+| FFCBSPT/Kraul-GA tests | 24 passed |
 | Fixed-scale end-to-end smoke | PASS: 64/64 tasks, zero failures, report integrity PASS |
 | Three-algorithm DBD end-to-end smoke | PASS: 6/6 tasks |
 | FFCBSPT/Kraul-GA end-to-end smoke | PASS: 4/4 tasks |
 | Rebuild archived paper reports | PASS: Figure 5, Table 10, Figures 6–7 and five-method queue consistency checks |
 
-Total: **108 tests passed, 3 skipped**. The three skipped baseline integration
+Total: **109 tests passed, 3 skipped**. The three skipped baseline integration
 tests require legacy J25/single-seed result sets intentionally excluded from
 the multi-seed paper package; they do not represent skipped current formal
 task validation.
@@ -44,3 +44,11 @@ schedule replay. The report code now extracts saved instance filenames with
 `PureWindowsPath`; the original and released hashes are recorded in
 `validation/PORTABILITY_CHANGES.json`. Solver code and raw results remain
 unchanged. This fix is covered by rerunning the report checks on both platforms.
+
+Windows CI also identified a CPU-dependent NumPy default-quicksort tie order:
+the same FFCBSPT real instance yielded 564,988 instead of the local 563,699.
+The published baseline intentionally preserves the reference sorting behavior.
+Its real-instance test now verifies repeatability and all scheduling/metric
+invariants; a new tie-free four-job case checks the exact objective (104) and
+both stages' completion times. No numerical tolerance was broadened, and no
+solver implementation or paper record was changed for this test adjustment.

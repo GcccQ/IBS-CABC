@@ -4,5 +4,11 @@
     "original_sha256": "0c2395494e0860aece9c23d0f17d684553fe581511513146261a1887e988f8cb",
     "release_sha256": "be4d990e6e9034545c87e9cddf1d7bd349ddaafda0650f24a2b36c77e6124e53",
     "change": "Read filenames from historical Windows absolute paths using PureWindowsPath when replaying schedules on Linux. No optimizer or experimental record changes."
+  },
+  {
+    "path": "kraul-dbd-reproduction/tests/test_reproduction.py",
+    "original_sha256": "c71ea8fb8d61f37d498e7c4cd3be3cf39a6e201b2e537c0744823332c65596aa",
+    "release_sha256": "44d3d451bdb6d2b0229bf580698f4a4c3d5e9683c7d003f0503a1cf88ec43a8d",
+    "change": "Replace CPU-specific tied-sort objective assertion with repeatability checks and an exact tie-free decoder regression. Solver sorting semantics preserved."
   }
 ]

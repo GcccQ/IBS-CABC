@@ -1,5 +1,5 @@
 {
-  "copied_files": 309,
+  "copied_files": 308,
   "algorithm_and_result_bytes_changed": false,
   "files": [
     {
@@ -856,11 +856,6 @@
       "destination": "kraul-dbd-reproduction/tests/test_paired_statistics.py",
       "sha256": "7ef2f2a0f842c146f9213744089437f2c58ded1e003f31f6099ad5ef6ff99179",
       "bytes": 513
-    },
-    {
-      "destination": "kraul-dbd-reproduction/tests/test_reproduction.py",
-      "sha256": "c71ea8fb8d61f37d498e7c4cd3be3cf39a6e201b2e537c0744823332c65596aa",
-      "bytes": 6431
     },
     {
       "destination": "kraul-dbd-reproduction/tests/test_runner.py",

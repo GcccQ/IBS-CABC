@@ -109,6 +109,12 @@ directly with the same data/output/workers and omit `--new`.
 - Algorithms use wall-clock budgets. Seeds, instances, parameters and dependency
   versions are specified, but hardware, OS and concurrent load can change the
   search trajectory. Re-running does not guarantee identical objective values.
+- Kraul's released reference sorting uses NumPy's default unstable `argsort`.
+  Equal-key order can vary with CPU SIMD dispatch, even at the same NumPy
+  version. This release preserves that baseline behavior; FFCBSPT is
+  deterministic within an environment, but its tied-input result is not a
+  universal cross-machine constant. Exact decoder regression tests use a
+  tie-free fixture; archived results remain the source for paper-value checks.
 - Tables 4–8 can be independently recalculated from all 8,000 archived metrics.
   Historical per-task fixed-scale `checkpoints/` are absent from the local
   archive, so this release cannot recover every historical fixed-scale schedule.
