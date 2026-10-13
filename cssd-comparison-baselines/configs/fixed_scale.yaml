@@ -1,0 +1,38 @@
+experiment:
+  name: equal_budget_five_scale_baselines
+  data_root: ../dataset
+  splits:
+    - ../cssd-kg-edr/data/splits/paper_small25.txt
+    - ../cssd-kg-edr/data/splits/paper_fixed.txt
+  ibscabc_manifests:
+    - ../cssd-kg-edr/outputs/e4_fixed_j25_20260807T083643121632Z/manifest.json
+    - ../cssd-kg-edr/outputs/e4_fixed_scale_20260730T055650782856Z/manifest.json
+  algorithms: [standard_abc, alns, ts]
+  seeds: [101]
+  workers: 8
+  protocol:
+    name: paper_time_tau1
+    mode: official_time
+    tau: 1.0
+
+# Common settings are checked against the IBS-CABC formal-run manifest.
+# N=20, limit=10 and attempts=2 are mapped to the closest meaningful control
+# in each baseline; algorithm-specific settings are reported separately.
+# IBS-CABC uses max(64, 4*N + 2*M)=120 decoder-cache entries for N=M=20.
+common:
+  population_size: 20
+  stagnation_limit: 10
+  candidate_attempts: 2
+  cache_capacity: 120
+
+standard_abc:
+  onlooker_count: 20
+
+alns:
+  reaction_factor: 0.20
+  initial_temperature_ratio: 0.01
+  final_temperature_ratio: 0.00001
+
+ts:
+  neighborhood_size: 20
+  tabu_tenure: 10

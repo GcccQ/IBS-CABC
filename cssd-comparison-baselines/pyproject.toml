@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cssd-comparison-baselines"
+version = "1.0.0"
+description = "Equal-budget Standard ABC, ALNS and tabu-search baselines for CSSD scheduling"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0", "numpy>=1.24", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+cssd-baselines = "cssd_baselines.runner:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

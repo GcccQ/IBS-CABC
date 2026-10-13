@@ -1,0 +1,30 @@
+algorithm_defaults:
+  colony_size: 20
+  abandonment_limit: 10
+  archive_size: 20
+  operator_attempts: 2
+  ejection_depth: 3
+  intensification_enabled: true
+  intensification_fraction: 0.90
+  intensification_max_evaluations: 9000
+  intensification_critical_batches: 8
+  assignment_repair_enabled: true
+  assignment_repair_seconds_per_family: 10.0
+  assignment_repair_workers: 2
+  assignment_repair_iterations: 3
+  assignment_repair_joint_max_jobs: 600
+  assignment_repair_max_jobs: 600
+  assignment_repair_allow_empty_batches: true
+  assignment_repair_time_fraction: 0.30
+  mathematical_repair_seconds: 45.0
+  onlooker_quality_weight: 0.60
+  onlooker_diversity_weight: 0.15
+  onlooker_bottleneck_weight: 0.25
+  delta_seed_pairs:
+    - [1.00, 1.00]
+    - [0.93, 1.00]
+    - [1.00, 0.95]
+    - [0.67, 0.78]
+    - [0.40, 0.52]
+    - [0.85, 0.85]
+    - [0.70, 0.70]

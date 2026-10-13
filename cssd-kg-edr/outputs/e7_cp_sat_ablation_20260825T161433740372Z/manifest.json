@@ -1,0 +1,189 @@
+{
+  "created_utc": "2026-08-25T16:14:33.741373+00:00",
+  "resumed_utc": null,
+  "config": {
+    "experiment": {
+      "name": "e7_cp_sat_ablation",
+      "report_template": "cp_sat_ablation",
+      "paired_algorithm_order": true,
+      "selection": {
+        "split": "data/splits/paper_fixed_cp_sat_ablation.txt"
+      },
+      "protocols": [
+        {
+          "name": "paper_time_tau1",
+          "mode": "official_time",
+          "tau": 1.0
+        }
+      ],
+      "seeds": [
+        101
+      ],
+      "evidence_contract": {
+        "instances": 60,
+        "scenarios": 1,
+        "algorithm_labels": 2
+      },
+      "ablation": {
+        "full_label": "IBS-CABC",
+        "no_cp_label": "IBS-CABC-w/o-CP-SAT",
+        "marginal_threshold_percent": 0.3,
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 20260825
+      },
+      "algorithms": [
+        {
+          "name": "ibscabc",
+          "label": "IBS-CABC",
+          "parameters": {
+            "colony_size": 20,
+            "abandonment_limit": 10,
+            "archive_size": 20,
+            "operator_attempts": 2,
+            "ejection_depth": 3,
+            "intensification_enabled": true,
+            "intensification_fraction": 0.9,
+            "intensification_max_evaluations": 9000,
+            "intensification_critical_batches": 8,
+            "assignment_repair_enabled": true,
+            "assignment_repair_seconds_per_family": 10.0,
+            "assignment_repair_workers": 1,
+            "assignment_repair_iterations": 3,
+            "assignment_repair_joint_max_jobs": 600,
+            "assignment_repair_max_jobs": 600,
+            "assignment_repair_allow_empty_batches": true,
+            "assignment_repair_time_fraction": 0.3,
+            "mathematical_repair_seconds": 45.0,
+            "onlooker_quality_weight": 0.6,
+            "onlooker_diversity_weight": 0.15,
+            "onlooker_bottleneck_weight": 0.25,
+            "delta_seed_pairs": [
+              [
+                1.0,
+                1.0
+              ],
+              [
+                0.93,
+                1.0
+              ],
+              [
+                1.0,
+                0.95
+              ],
+              [
+                0.67,
+                0.78
+              ],
+              [
+                0.4,
+                0.52
+              ],
+              [
+                0.85,
+                0.85
+              ],
+              [
+                0.7,
+                0.7
+              ]
+            ]
+          }
+        },
+        {
+          "name": "ibscabc",
+          "label": "IBS-CABC-w/o-CP-SAT",
+          "parameters": {
+            "colony_size": 20,
+            "abandonment_limit": 10,
+            "archive_size": 20,
+            "operator_attempts": 2,
+            "ejection_depth": 3,
+            "intensification_enabled": true,
+            "intensification_fraction": 0.9,
+            "intensification_max_evaluations": 9000,
+            "intensification_critical_batches": 8,
+            "assignment_repair_enabled": false,
+            "assignment_repair_seconds_per_family": 10.0,
+            "assignment_repair_workers": 1,
+            "assignment_repair_iterations": 3,
+            "assignment_repair_joint_max_jobs": 600,
+            "assignment_repair_max_jobs": 600,
+            "assignment_repair_allow_empty_batches": true,
+            "assignment_repair_time_fraction": 0.3,
+            "mathematical_repair_seconds": 45.0,
+            "onlooker_quality_weight": 0.6,
+            "onlooker_diversity_weight": 0.15,
+            "onlooker_bottleneck_weight": 0.25,
+            "delta_seed_pairs": [
+              [
+                1.0,
+                1.0
+              ],
+              [
+                0.93,
+                1.0
+              ],
+              [
+                1.0,
+                0.95
+              ],
+              [
+                0.67,
+                0.78
+              ],
+              [
+                0.4,
+                0.52
+              ],
+              [
+                0.85,
+                0.85
+              ],
+              [
+                0.7,
+                0.7
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "data_root": "G:\\article\\dataset",
+  "dataset_sha256": "d34f760c98d41817540efedea06f267447f97deee84dbd73aa57e1054ae977e6",
+  "config_sha256": "ae7d417b20b3e080878b7bbac33a766724eadd461199e00c5c3ad62ad7a86a9b",
+  "instance_count": 60,
+  "python": "3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "hardware": {
+    "cpu_model": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "logical_cpu_count": 16,
+    "memory_bytes": 33618259968,
+    "machine": "AMD64"
+  },
+  "software": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.10.9",
+    "ortools": "9.15.6755",
+    "tqdm": "4.67.1"
+  },
+  "workers": 8,
+  "worker_recycle_task_limit": 64,
+  "pid": 19476,
+  "code_sha256": "4c2547eaecdc648b70783144152d5911bf46ca385d3d90eb2dd2e309f3941034",
+  "task_manifest_sha256": "9e7ab73f8355b17750e6bea089b57de1c57074b41e55c12c7a2381197ac9bd38",
+  "internal_thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "truncated_torn_result_bytes": 0,
+  "task_count_total": 120,
+  "task_count_successful": 120,
+  "task_count_failed": 0,
+  "task_count_pending": 0,
+  "finished_utc": "2026-08-25T19:37:10.553914+00:00"
+}

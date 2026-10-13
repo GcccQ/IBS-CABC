@@ -1,0 +1,17 @@
+# Development-only cross-scale diagnostic. Never use these rows as formal evidence.
+experiment:
+  name: development_probe4
+  report_template: precheck
+  selection:
+    split: data/splits/development_probe4.txt
+  protocols:
+    - {name: development_time_tau005, mode: official_time, tau: 0.05}
+  seeds: [101]
+  evidence_contract:
+    instances: 4
+    scenarios: 1
+    algorithm_labels: 1
+  algorithms:
+    - name: ibscabc
+      parameters:
+        assignment_repair_workers: 1

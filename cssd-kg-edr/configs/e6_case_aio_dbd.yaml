@@ -1,0 +1,26 @@
+# E6 / Table 8 and Figs. 5-6: IBS-CABC DBD and AIO.
+experiment:
+  name: e6_case_aio_dbd_proxy91
+  selection:
+    split: data/splits/case_three_month_proxy91.txt
+  case_study:
+    days: 91
+    total_jobs: 22927
+    first_seed: 233
+    last_seed: 323
+    require_contiguous_seeds: true
+    source_status: locked_proxy
+    metadata: data/case_three_month_proxy91.yaml
+  day_length_minutes: 1440
+  planning_modes: [DBD, AIO]
+  scenarios:
+    - name: base
+      machines_stage1: 12
+      machines_stage2: 5
+  protocols:
+    - {name: paper_time_tau1, mode: official_time, tau: 1.0}
+  seeds: [101]
+  algorithms:
+    - name: ibscabc
+      parameters:
+        assignment_repair_workers: 1

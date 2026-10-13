@@ -1,0 +1,62 @@
+[
+  {
+    "presentation_file": "results_for_advisor/Table4_7_numeric.csv",
+    "original_file": "cssd-fixed-multiseed-server32-w72-final/fixed_30_20_server32_w72_report_bundle/outputs/fixed_30_20_server32_w72/report/tables4_7_numeric.csv",
+    "sha256": "805a2a2a13dd951c826c271e01dca1d3ad4735049fdfb8a844d5ae9a2b598dca"
+  },
+  {
+    "presentation_file": "results_for_advisor/Table4_7_paper.csv",
+    "original_file": "cssd-fixed-multiseed-server32-w72-final/fixed_30_20_server32_w72_report_bundle/outputs/fixed_30_20_server32_w72/report/tables4_7_paper.csv",
+    "sha256": "8d13681b9928478446f69c5c186fe8f7b8fc4930ca69748cc4b83aadc40aeef8"
+  },
+  {
+    "presentation_file": "results_for_advisor/Table8_paired_statistics.csv",
+    "original_file": "cssd-fixed-multiseed-server32-w72-final/fixed_30_20_server32_w72_report_bundle/outputs/fixed_30_20_server32_w72/report/table8_paired_statistics.csv",
+    "sha256": "16908c9da0a45e09b290c62f4e1a69288c4794c428fdeb4a3ab374ccc6d13b04"
+  },
+  {
+    "presentation_file": "results_for_advisor/Table8_paired_instance_means.csv",
+    "original_file": "cssd-fixed-multiseed-server32-w72-final/fixed_30_20_server32_w72_report_bundle/outputs/fixed_30_20_server32_w72/report/table8_paired_instance_means.csv",
+    "sha256": "7ae8fb1c06eb86dfb8b05aebb6faad7c943f31bc6af4da599247b3693431204e"
+  },
+  {
+    "presentation_file": "results_for_advisor/Table9_CP_SAT_ablation.csv",
+    "original_file": "cssd-kg-edr/outputs/e7_cp_sat_ablation_20260825T161433740372Z/tables/table8_1_cp_sat_ablation_zh.csv",
+    "sha256": "36c03a33040b80790615e8853ec25b20f16c3ec80ceed4b71e0fc7952800fac5"
+  },
+  {
+    "presentation_file": "results_for_advisor/Table10_DBD_mean_sample_sd.csv",
+    "original_file": "paper_artifacts/dbd_10seeds_20260831/table9_mean_sample_sd.csv",
+    "sha256": "f239031ba0c24830befae15ea821d10ecfe0f57020043af60635be0f02dfb837"
+  },
+  {
+    "presentation_file": "results_for_advisor/Table10_DBD_paper.csv",
+    "original_file": "paper_artifacts/dbd_10seeds_20260831/table9_paper.csv",
+    "sha256": "95aac14f4edc91f26baaaa3502dea243f113b78eecd05aabcc16c0680f168da7"
+  },
+  {
+    "presentation_file": "results_for_advisor/DBD_by_seed.csv",
+    "original_file": "paper_artifacts/dbd_10seeds_20260831/table9_by_seed.csv",
+    "sha256": "668cc661056385ae1fa22992049de2163b5eb8cf70a95604903f42738fd19ac0"
+  },
+  {
+    "presentation_file": "results_for_advisor/DBD_relative_reductions_percent.csv",
+    "original_file": "paper_artifacts/dbd_10seeds_20260831/ibs_relative_reductions_percent.csv",
+    "sha256": "a4343597cde59bc7679e14375476eebef9693c1a9e8f08367c9481cb330d466f"
+  },
+  {
+    "presentation_file": "results_for_advisor/DBD_queue_summary.csv",
+    "original_file": "paper_artifacts/dbd_10seeds_20260831/queue_summary.csv",
+    "sha256": "2e3802e7dc7900918dd388be693eb6b49694027e9b343c822d1997ae9ddaa426"
+  },
+  {
+    "presentation_file": "results_for_advisor/DBD_paired_seed_differences.csv",
+    "original_file": "paper_artifacts/dbd_10seeds_20260831/paired_seed_differences.csv",
+    "sha256": "a6d52d875c3bc1c2359e064cdd732cca17d1693767831358ba5a8f1d0118fdfd"
+  },
+  {
+    "presentation_file": "results_for_advisor/Kraul_GA_reproduction_comparison.csv",
+    "original_file": "kraul-dbd-reproduction/outputs/fixed_scale_kraul_ga_rerun_final/tables/paper_table5_kraul_ga_comparison.csv",
+    "sha256": "ef973085f51972bb6fdc5ce75a532d2180b5eae34cbf3e8338b97b49b20cfaed"
+  }
+]

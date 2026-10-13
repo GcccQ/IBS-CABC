@@ -1,0 +1,34 @@
+# E7 / Table 8-1: paired CP-SAT ablation on J=100/250/500.
+# Both variants use the same instance, seed, objective, decoder, feasibility
+# audit, and total official wall-clock budget.  The sole intervention is
+# assignment_repair_enabled.
+experiment:
+  name: e7_cp_sat_ablation
+  report_template: cp_sat_ablation
+  paired_algorithm_order: true
+  selection:
+    split: data/splits/paper_fixed_cp_sat_ablation.txt
+  protocols:
+    - {name: paper_time_tau1, mode: official_time, tau: 1.0}
+  seeds: [101]
+  evidence_contract:
+    instances: 60
+    scenarios: 1
+    algorithm_labels: 2
+  ablation:
+    full_label: IBS-CABC
+    no_cp_label: IBS-CABC-w/o-CP-SAT
+    marginal_threshold_percent: 0.30
+    bootstrap_resamples: 10000
+    bootstrap_seed: 20260825
+  algorithms:
+    - name: ibscabc
+      label: IBS-CABC
+      parameters:
+        assignment_repair_enabled: true
+        assignment_repair_workers: 1
+    - name: ibscabc
+      label: IBS-CABC-w/o-CP-SAT
+      parameters:
+        assignment_repair_enabled: false
+        assignment_repair_workers: 1

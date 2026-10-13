@@ -1,0 +1,17 @@
+# Development-only J500 verification for assignment-timing repair.
+experiment:
+  name: development_j500_5pct
+  report_template: precheck
+  selection:
+    split: data/splits/paper_fixed_j500.txt
+  protocols:
+    - {name: development_time_tau005, mode: official_time, tau: 0.05}
+  seeds: [101]
+  evidence_contract:
+    instances: 20
+    scenarios: 1
+    algorithm_labels: 1
+  algorithms:
+    - name: ibscabc
+      parameters:
+        assignment_repair_workers: 1

@@ -1,0 +1,30 @@
+name: case_three_month_proxy91
+status: proxy_not_exact_reproduction
+source_dataset: RealWorldInstances365
+selection:
+  type: contiguous_window
+  days: 91
+  first_seed: 233
+  last_seed: 323
+  rule: >-
+    Before algorithm execution, choose the contiguous 91-day window minimizing
+    absolute total-job-count difference from the paper's reported 22,934 devices.
+paper_case:
+  days: 91
+  devices: 22934
+  mean_devices_per_day: 252
+  maximum_devices_per_day: 413
+locked_proxy:
+  devices: 22927
+  mean_devices_per_day: 251.9450549451
+  minimum_devices_per_day: 80
+  maximum_devices_per_day: 427
+  absolute_device_count_difference: 7
+time_axis:
+  day_length_minutes: 1440
+  DBD: independent daily optimization with an empty system at each day start
+  AIO: one 91-day optimization with release offsets and cross-day batching allowed
+disclosure: >-
+  The raw three-month case-study period used for the paper's Table 8 is not
+  present in the supplied dataset. Results from this locked proxy must not be
+  described as an exact reproduction of the published Table 8.

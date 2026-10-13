@@ -1,0 +1,18 @@
+# E3 / Table 4: all 365 supplied real-distribution daily instances.
+# The actual file range is J=70..431 (not 437).
+experiment:
+  name: e3_real365
+  report_template: e3
+  selection:
+    split: data/splits/paper_real365.txt
+  protocols:
+    - {name: paper_time_tau1, mode: official_time, tau: 1.0}
+  seeds: [101]
+  evidence_contract:
+    instances: 365
+    scenarios: 1
+    algorithm_labels: 1
+  algorithms:
+    - name: ibscabc
+      parameters:
+        assignment_repair_workers: 1

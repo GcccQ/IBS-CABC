@@ -1,0 +1,26 @@
+# Paper Section 5.3-aligned case experiment using only the proposed IBS-CABC.
+# The exact raw three-month case is unavailable; the locked proxy is documented
+# in data/case_three_month_proxy91.yaml.
+experiment:
+  name: case_aio_dbd_proxy91
+  selection:
+    split: data/splits/case_three_month_proxy91.txt
+  case_study:
+    days: 91
+    total_jobs: 22927
+    first_seed: 233
+    last_seed: 323
+    require_contiguous_seeds: true
+    source_status: locked_proxy
+    metadata: data/case_three_month_proxy91.yaml
+  day_length_minutes: 1440
+  planning_modes: [DBD, AIO]
+  scenarios:
+    - name: base
+      machines_stage1: 12
+      machines_stage2: 5
+  protocols:
+    - {name: paper_time_tau1, mode: official_time, tau: 1.0}
+  seeds: [101]
+  algorithms:
+    - {name: ibscabc}

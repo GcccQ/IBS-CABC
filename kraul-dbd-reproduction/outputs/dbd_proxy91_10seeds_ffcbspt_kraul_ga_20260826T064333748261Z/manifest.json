@@ -1,0 +1,1013 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "created_utc": "2026-08-26T06:43:33.763271+00:00",
+  "run_contract": "7c21331aed92529beeb7faf52b291c7a94ba3922499cccb026e4d9e23e11de9a",
+  "config_sha256": "ddfd00d87b3df826009b6fed39795926a4da421f3aa7e65724b7b32dc30971af",
+  "source_sha256": "0171e3c4d0b28d6abf88fb9d45ee7fad8995f0953c5e6497ceb186a98b0af4af",
+  "notebook_sha256": "fa9c5f4d3cd105980def46eb7a8a83445643a70318a7fe2a0f0e56a502693f67",
+  "python": "3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "dependency_versions": {
+    "kraul-dbd-reproduction": "1.1.0",
+    "numpy": "2.2.6",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.10.9"
+  },
+  "workers": 8,
+  "task_count_total": 1001,
+  "experiment": {
+    "name": "dbd_proxy91_10seeds_ffcbspt_kraul_ga",
+    "contract": "formal_proxy91_multiseed",
+    "data_root": "G:\\article\\dataset",
+    "split": "G:\\article\\kraul-dbd-reproduction\\data\\case_three_month_proxy91.txt",
+    "source_notebook": "G:\\article\\tmp\\pdfs\\kraul_experiment\\Genetic_Algorithm_Example.ipynb",
+    "expected_days": 91,
+    "expected_jobs": 22927,
+    "first_day_seed": 233,
+    "last_day_seed": 323,
+    "machines_stage1": 12,
+    "machines_stage2": 5,
+    "capacities": [
+      15,
+      11000
+    ],
+    "day_length_minutes": 1440,
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "workers": 8,
+    "protocol": {
+      "mode": "official_time",
+      "name": "paper_time_tau1",
+      "tau": 1.0,
+      "time_limit_seconds": null,
+      "max_evaluations": null
+    },
+    "algorithms": [
+      {
+        "name": "ffcbspt",
+        "label": "FFCBSPT",
+        "profile": null,
+        "overrides": {}
+      },
+      {
+        "name": "kraul_ga",
+        "label": "Kraul-GA",
+        "profile": "paper_final",
+        "overrides": {}
+      }
+    ]
+  },
+  "audit": {
+    "dataset_sha256": "b3fa396eeaec8e71feaa720b2425ada102f57531cf288c39bd9b6b94c5f94116",
+    "total_jobs": 22927,
+    "day_count": 91,
+    "sequence": [
+      {
+        "case_day_index": 0,
+        "case_day_number": 1,
+        "relative_path": "RealWorldInstances365/J_419_F_5_seed_233.txt",
+        "instance": "J_419_F_5_seed_233",
+        "instance_sha256": "95c870538d2be9b7237d0f138dec96c7760e18dde57ab18ba41db91e6ddedb49",
+        "jobs": 419,
+        "families": 5,
+        "official_time_limit_seconds": 1497.2685
+      },
+      {
+        "case_day_index": 1,
+        "case_day_number": 2,
+        "relative_path": "RealWorldInstances365/J_245_F_5_seed_234.txt",
+        "instance": "J_245_F_5_seed_234",
+        "instance_sha256": "db4962405deabae0e04bdf1b66c8a302c8591e16fc754c6fbea98371f013681b",
+        "jobs": 245,
+        "families": 5,
+        "official_time_limit_seconds": 515.2125
+      },
+      {
+        "case_day_index": 2,
+        "case_day_number": 3,
+        "relative_path": "RealWorldInstances365/J_247_F_5_seed_235.txt",
+        "instance": "J_247_F_5_seed_235",
+        "instance_sha256": "d5a85b5021dde8806359a2542989b9c50c9efb27240d6ef8d480462a85adb06b",
+        "jobs": 247,
+        "families": 5,
+        "official_time_limit_seconds": 523.5765
+      },
+      {
+        "case_day_index": 3,
+        "case_day_number": 4,
+        "relative_path": "RealWorldInstances365/J_414_F_5_seed_236.txt",
+        "instance": "J_414_F_5_seed_236",
+        "instance_sha256": "0994cef9d351f1072d0a16261ad3f031073a877b27fd6208f9f8e5809e2c492e",
+        "jobs": 414,
+        "families": 5,
+        "official_time_limit_seconds": 1461.866
+      },
+      {
+        "case_day_index": 4,
+        "case_day_number": 5,
+        "relative_path": "RealWorldInstances365/J_388_F_5_seed_237.txt",
+        "instance": "J_388_F_5_seed_237",
+        "instance_sha256": "fe7adc641682fbf95cb27c560c1547f054287ccae0fe77aed3690cf7dfa2ac82",
+        "jobs": 388,
+        "families": 5,
+        "official_time_limit_seconds": 1284.624
+      },
+      {
+        "case_day_index": 5,
+        "case_day_number": 6,
+        "relative_path": "RealWorldInstances365/J_260_F_5_seed_238.txt",
+        "instance": "J_260_F_5_seed_238",
+        "instance_sha256": "895d0b14bc3af69e912100b19eeacefb019143f75345ce2edb44b21bbebed81e",
+        "jobs": 260,
+        "families": 5,
+        "official_time_limit_seconds": 579.6
+      },
+      {
+        "case_day_index": 6,
+        "case_day_number": 7,
+        "relative_path": "RealWorldInstances365/J_130_F_5_seed_239.txt",
+        "instance": "J_130_F_5_seed_239",
+        "instance_sha256": "a716392b2f5d08408f0e7d0bc816988d9a913b8b0edbbb2909c8fa6fd933dd45",
+        "jobs": 130,
+        "families": 5,
+        "official_time_limit_seconds": 148.65
+      },
+      {
+        "case_day_index": 7,
+        "case_day_number": 8,
+        "relative_path": "RealWorldInstances365/J_385_F_5_seed_240.txt",
+        "instance": "J_385_F_5_seed_240",
+        "instance_sha256": "4d4b0ca79b8ff9b0529cb9bd44ad32d9f748225896025bdf7015e86865239606",
+        "jobs": 385,
+        "families": 5,
+        "official_time_limit_seconds": 1264.9125
+      },
+      {
+        "case_day_index": 8,
+        "case_day_number": 9,
+        "relative_path": "RealWorldInstances365/J_422_F_5_seed_241.txt",
+        "instance": "J_422_F_5_seed_241",
+        "instance_sha256": "bf8bf0dc153a5c7d9ba30072e926417facc18e0844e9b39a4f9a3dce17121fc1",
+        "jobs": 422,
+        "families": 5,
+        "official_time_limit_seconds": 1518.714
+      },
+      {
+        "case_day_index": 9,
+        "case_day_number": 10,
+        "relative_path": "RealWorldInstances365/J_241_F_5_seed_242.txt",
+        "instance": "J_241_F_5_seed_242",
+        "instance_sha256": "c573d236d6715751a9c2fabaa8e109e8ce0f17de4f8a6409dbb586176f9e640b",
+        "jobs": 241,
+        "families": 5,
+        "official_time_limit_seconds": 498.6885
+      },
+      {
+        "case_day_index": 10,
+        "case_day_number": 11,
+        "relative_path": "RealWorldInstances365/J_339_F_5_seed_243.txt",
+        "instance": "J_339_F_5_seed_243",
+        "instance_sha256": "4ae310223df3d17e0722b09a23cb183a342e7bdf2bb8d046cae004d334341e69",
+        "jobs": 339,
+        "families": 5,
+        "official_time_limit_seconds": 981.8285
+      },
+      {
+        "case_day_index": 11,
+        "case_day_number": 12,
+        "relative_path": "RealWorldInstances365/J_418_F_5_seed_244.txt",
+        "instance": "J_418_F_5_seed_244",
+        "instance_sha256": "63cd8cf28433c3d196f116815a8f1e4dcacb2c6993637e313ee71f20a7f6895b",
+        "jobs": 418,
+        "families": 5,
+        "official_time_limit_seconds": 1490.154
+      },
+      {
+        "case_day_index": 12,
+        "case_day_number": 13,
+        "relative_path": "RealWorldInstances365/J_134_F_5_seed_245.txt",
+        "instance": "J_134_F_5_seed_245",
+        "instance_sha256": "c67b521aa8f90d3dedb3cb96edc63fe2bbb9bafe5ad26a03d982534e48b71e77",
+        "jobs": 134,
+        "families": 5,
+        "official_time_limit_seconds": 157.626
+      },
+      {
+        "case_day_index": 13,
+        "case_day_number": 14,
+        "relative_path": "RealWorldInstances365/J_100_F_5_seed_246.txt",
+        "instance": "J_100_F_5_seed_246",
+        "instance_sha256": "b842697ceab198d95e757dab2ab4da6db78f42abb6321b1539a956dccdd163b0",
+        "jobs": 100,
+        "families": 5,
+        "official_time_limit_seconds": 90.0
+      },
+      {
+        "case_day_index": 14,
+        "case_day_number": 15,
+        "relative_path": "RealWorldInstances365/J_304_F_5_seed_247.txt",
+        "instance": "J_304_F_5_seed_247",
+        "instance_sha256": "5820272c13bcac4ff7feffa3d4b02746c4bcd728b983758cced387d5c6980927",
+        "jobs": 304,
+        "families": 5,
+        "official_time_limit_seconds": 790.536
+      },
+      {
+        "case_day_index": 15,
+        "case_day_number": 16,
+        "relative_path": "RealWorldInstances365/J_282_F_5_seed_248.txt",
+        "instance": "J_282_F_5_seed_248",
+        "instance_sha256": "db709c6066ec8e9799fb72f7aef888f5d9ed6043aa16269bedab8e55688a9602",
+        "jobs": 282,
+        "families": 5,
+        "official_time_limit_seconds": 680.954
+      },
+      {
+        "case_day_index": 16,
+        "case_day_number": 17,
+        "relative_path": "RealWorldInstances365/J_208_F_5_seed_249.txt",
+        "instance": "J_208_F_5_seed_249",
+        "instance_sha256": "248d1e1c54eaac7f69ff1ac82bb55c93e7649441bb265b8169f3d0ea1afc9a14",
+        "jobs": 208,
+        "families": 5,
+        "official_time_limit_seconds": 372.744
+      },
+      {
+        "case_day_index": 17,
+        "case_day_number": 18,
+        "relative_path": "RealWorldInstances365/J_268_F_5_seed_250.txt",
+        "instance": "J_268_F_5_seed_250",
+        "instance_sha256": "9a1ccf6ef41a9c0df5c5a90a4c92771d7b98e79a36d30b5cb8d17f394de2e1f2",
+        "jobs": 268,
+        "families": 5,
+        "official_time_limit_seconds": 615.504
+      },
+      {
+        "case_day_index": 18,
+        "case_day_number": 19,
+        "relative_path": "RealWorldInstances365/J_297_F_5_seed_251.txt",
+        "instance": "J_297_F_5_seed_251",
+        "instance_sha256": "884ebc0a33c0c0a551e74181093184eb6cb90ebae9cb86846631984a5b51da51",
+        "jobs": 297,
+        "families": 5,
+        "official_time_limit_seconds": 754.7765
+      },
+      {
+        "case_day_index": 19,
+        "case_day_number": 20,
+        "relative_path": "RealWorldInstances365/J_388_F_5_seed_252.txt",
+        "instance": "J_388_F_5_seed_252",
+        "instance_sha256": "0fa80a086545c7d1a81c74aaa3a06d5dc36b2f66c2d9822cccd1628bc65c8e81",
+        "jobs": 388,
+        "families": 5,
+        "official_time_limit_seconds": 1284.624
+      },
+      {
+        "case_day_index": 20,
+        "case_day_number": 21,
+        "relative_path": "RealWorldInstances365/J_345_F_5_seed_253.txt",
+        "instance": "J_345_F_5_seed_253",
+        "instance_sha256": "ea3af99eb491c78ee57d5e6f788f5c7df6228b7829141dd420cc586dd742cc14",
+        "jobs": 345,
+        "families": 5,
+        "official_time_limit_seconds": 1016.7125
+      },
+      {
+        "case_day_index": 21,
+        "case_day_number": 22,
+        "relative_path": "RealWorldInstances365/J_261_F_5_seed_254.txt",
+        "instance": "J_261_F_5_seed_254",
+        "instance_sha256": "08c15bb89041f482676053b05f6887013a88d875a2edfa9f8eaaa56c2b76516d",
+        "jobs": 261,
+        "families": 5,
+        "official_time_limit_seconds": 584.0285
+      },
+      {
+        "case_day_index": 22,
+        "case_day_number": 23,
+        "relative_path": "RealWorldInstances365/J_98_F_5_seed_255.txt",
+        "instance": "J_98_F_5_seed_255",
+        "instance_sha256": "fb11508bdf0f397d39fb4e87c444be411ca7fd419161726f85377fd313b21c1e",
+        "jobs": 98,
+        "families": 5,
+        "official_time_limit_seconds": 86.634
+      },
+      {
+        "case_day_index": 23,
+        "case_day_number": 24,
+        "relative_path": "RealWorldInstances365/J_320_F_5_seed_256.txt",
+        "instance": "J_320_F_5_seed_256",
+        "instance_sha256": "7182555d3dfbc967929aaa58516cafff6f58c260eac78c0c2a870a0191676622",
+        "jobs": 320,
+        "families": 5,
+        "official_time_limit_seconds": 875.4
+      },
+      {
+        "case_day_index": 24,
+        "case_day_number": 25,
+        "relative_path": "RealWorldInstances365/J_232_F_5_seed_257.txt",
+        "instance": "J_232_F_5_seed_257",
+        "instance_sha256": "064613e1755d5474c076964397c61ac5e2e6c2668188c5193fa121127879d538",
+        "jobs": 232,
+        "families": 5,
+        "official_time_limit_seconds": 462.504
+      },
+      {
+        "case_day_index": 25,
+        "case_day_number": 26,
+        "relative_path": "RealWorldInstances365/J_404_F_5_seed_258.txt",
+        "instance": "J_404_F_5_seed_258",
+        "instance_sha256": "616161313d9b6a90a71b428a8366d5c7f6bc9fd8e5201476e9034ef3b4bd79cb",
+        "jobs": 404,
+        "families": 5,
+        "official_time_limit_seconds": 1392.336
+      },
+      {
+        "case_day_index": 26,
+        "case_day_number": 27,
+        "relative_path": "RealWorldInstances365/J_90_F_5_seed_259.txt",
+        "instance": "J_90_F_5_seed_259",
+        "instance_sha256": "1929ee87ce6f1b8d8cd497f774eec1606b8ed1846cfe05ab7389c24130842598",
+        "jobs": 90,
+        "families": 5,
+        "official_time_limit_seconds": 73.85
+      },
+      {
+        "case_day_index": 27,
+        "case_day_number": 28,
+        "relative_path": "RealWorldInstances365/J_177_F_5_seed_260.txt",
+        "instance": "J_177_F_5_seed_260",
+        "instance_sha256": "01080b59b26d6e254bc48a8cb60299df0380955aa93ae61d5f0e9ae4f98d9893",
+        "jobs": 177,
+        "families": 5,
+        "official_time_limit_seconds": 271.2965
+      },
+      {
+        "case_day_index": 28,
+        "case_day_number": 29,
+        "relative_path": "RealWorldInstances365/J_291_F_5_seed_261.txt",
+        "instance": "J_291_F_5_seed_261",
+        "instance_sha256": "379ad4b258a1edf5d2e7a91b511e3141424ea808cd94105e86d124546a1d1b45",
+        "jobs": 291,
+        "families": 5,
+        "official_time_limit_seconds": 724.7885
+      },
+      {
+        "case_day_index": 29,
+        "case_day_number": 30,
+        "relative_path": "RealWorldInstances365/J_230_F_5_seed_262.txt",
+        "instance": "J_230_F_5_seed_262",
+        "instance_sha256": "b3e040339f145b48d9d91f813943a6eebf2f655d42ed9b69284242cf5710fa0e",
+        "jobs": 230,
+        "families": 5,
+        "official_time_limit_seconds": 454.65
+      },
+      {
+        "case_day_index": 30,
+        "case_day_number": 31,
+        "relative_path": "RealWorldInstances365/J_288_F_5_seed_263.txt",
+        "instance": "J_288_F_5_seed_263",
+        "instance_sha256": "32fbbafd8c6a83372b799061856ce9df5c7700956aa38f3c8b71f70b97782a17",
+        "jobs": 288,
+        "families": 5,
+        "official_time_limit_seconds": 710.024
+      },
+      {
+        "case_day_index": 31,
+        "case_day_number": 32,
+        "relative_path": "RealWorldInstances365/J_388_F_5_seed_264.txt",
+        "instance": "J_388_F_5_seed_264",
+        "instance_sha256": "b93d4f923ced709b6119adca1656cf61c3304be9913a9105e58dfa341b9c989f",
+        "jobs": 388,
+        "families": 5,
+        "official_time_limit_seconds": 1284.624
+      },
+      {
+        "case_day_index": 32,
+        "case_day_number": 33,
+        "relative_path": "RealWorldInstances365/J_270_F_5_seed_265.txt",
+        "instance": "J_270_F_5_seed_265",
+        "instance_sha256": "99fa582a2457d61d731a0c3c672510d85b596ebef00643d7ffcfce05d33a4e3b",
+        "jobs": 270,
+        "families": 5,
+        "official_time_limit_seconds": 624.65
+      },
+      {
+        "case_day_index": 33,
+        "case_day_number": 34,
+        "relative_path": "RealWorldInstances365/J_105_F_5_seed_266.txt",
+        "instance": "J_105_F_5_seed_266",
+        "instance_sha256": "5e2d2c5ff2ce337dea8164b849d59f4b1a85766b806cc7f20efa2d7b3efab55d",
+        "jobs": 105,
+        "families": 5,
+        "official_time_limit_seconds": 98.7125
+      },
+      {
+        "case_day_index": 34,
+        "case_day_number": 35,
+        "relative_path": "RealWorldInstances365/J_171_F_5_seed_267.txt",
+        "instance": "J_171_F_5_seed_267",
+        "instance_sha256": "1ef175c11e707c96fc5ccb2ab25b59f4ff12c7aeb19248cd1b6a6ac056d6f51e",
+        "jobs": 171,
+        "families": 5,
+        "official_time_limit_seconds": 253.5485
+      },
+      {
+        "case_day_index": 35,
+        "case_day_number": 36,
+        "relative_path": "RealWorldInstances365/J_343_F_5_seed_268.txt",
+        "instance": "J_343_F_5_seed_268",
+        "instance_sha256": "c136e0f53093d37f231e21156fdd8e28c5bda3218d0632256ffe1b4fedf06e8d",
+        "jobs": 343,
+        "families": 5,
+        "official_time_limit_seconds": 1005.0165
+      },
+      {
+        "case_day_index": 36,
+        "case_day_number": 37,
+        "relative_path": "RealWorldInstances365/J_90_F_5_seed_269.txt",
+        "instance": "J_90_F_5_seed_269",
+        "instance_sha256": "50542a510e7223876f75bd435a2bf798c53bcc718c75443a819fadec7f7b57c4",
+        "jobs": 90,
+        "families": 5,
+        "official_time_limit_seconds": 73.85
+      },
+      {
+        "case_day_index": 37,
+        "case_day_number": 38,
+        "relative_path": "RealWorldInstances365/J_161_F_5_seed_270.txt",
+        "instance": "J_161_F_5_seed_270",
+        "instance_sha256": "8cba59b019c9d404c14ae387f72f1eddb6291aa7b816b5f6091764a0769f6852",
+        "jobs": 161,
+        "families": 5,
+        "official_time_limit_seconds": 225.3285
+      },
+      {
+        "case_day_index": 38,
+        "case_day_number": 39,
+        "relative_path": "RealWorldInstances365/J_317_F_5_seed_271.txt",
+        "instance": "J_317_F_5_seed_271",
+        "instance_sha256": "971ca6984fed6fa59fe24388c4cbe2deacff7054493b28edfe33bac23099ac8a",
+        "jobs": 317,
+        "families": 5,
+        "official_time_limit_seconds": 859.1565
+      },
+      {
+        "case_day_index": 39,
+        "case_day_number": 40,
+        "relative_path": "RealWorldInstances365/J_314_F_5_seed_272.txt",
+        "instance": "J_314_F_5_seed_272",
+        "instance_sha256": "314d2f7e9031fd227fa084f1356b9ee4002a44de7ed7de16726b41816385e078",
+        "jobs": 314,
+        "families": 5,
+        "official_time_limit_seconds": 843.066
+      },
+      {
+        "case_day_index": 40,
+        "case_day_number": 41,
+        "relative_path": "RealWorldInstances365/J_168_F_5_seed_273.txt",
+        "instance": "J_168_F_5_seed_273",
+        "instance_sha256": "8c4b5439bad50115484e8039cb331dd0045f50aed7b8d29ece3afbd3662a7ef0",
+        "jobs": 168,
+        "families": 5,
+        "official_time_limit_seconds": 244.904
+      },
+      {
+        "case_day_index": 41,
+        "case_day_number": 42,
+        "relative_path": "RealWorldInstances365/J_143_F_5_seed_274.txt",
+        "instance": "J_143_F_5_seed_274",
+        "instance_sha256": "e44173dba4561e92b7c75c41743f60f5f3da9604dac83096b613bbcc44a59b2f",
+        "jobs": 143,
+        "families": 5,
+        "official_time_limit_seconds": 178.8165
+      },
+      {
+        "case_day_index": 42,
+        "case_day_number": 43,
+        "relative_path": "RealWorldInstances365/J_133_F_5_seed_275.txt",
+        "instance": "J_133_F_5_seed_275",
+        "instance_sha256": "2d989dcb7b84ec7d2b6c2b4c74456833251c0f6a2b84df2c03278daa3fff4517",
+        "jobs": 133,
+        "families": 5,
+        "official_time_limit_seconds": 155.3565
+      },
+      {
+        "case_day_index": 43,
+        "case_day_number": 44,
+        "relative_path": "RealWorldInstances365/J_260_F_5_seed_276.txt",
+        "instance": "J_260_F_5_seed_276",
+        "instance_sha256": "a80279b8a409f5d6fcdc1dc228cab1d29d655ce289ec0eac840b951de54e1b56",
+        "jobs": 260,
+        "families": 5,
+        "official_time_limit_seconds": 579.6
+      },
+      {
+        "case_day_index": 44,
+        "case_day_number": 45,
+        "relative_path": "RealWorldInstances365/J_115_F_5_seed_277.txt",
+        "instance": "J_115_F_5_seed_277",
+        "instance_sha256": "54bb132332b08062b74832b0322ed661822fdfa93bdfabf86ff0fde16202e63f",
+        "jobs": 115,
+        "families": 5,
+        "official_time_limit_seconds": 117.4125
+      },
+      {
+        "case_day_index": 45,
+        "case_day_number": 46,
+        "relative_path": "RealWorldInstances365/J_220_F_5_seed_278.txt",
+        "instance": "J_220_F_5_seed_278",
+        "instance_sha256": "a240c38c6702aa2b05bce9cc61e132fc7da93c4a3c1a04d33a93c5d26a97debd",
+        "jobs": 220,
+        "families": 5,
+        "official_time_limit_seconds": 416.4
+      },
+      {
+        "case_day_index": 46,
+        "case_day_number": 47,
+        "relative_path": "RealWorldInstances365/J_280_F_5_seed_279.txt",
+        "instance": "J_280_F_5_seed_279",
+        "instance_sha256": "8fa6ad84f994b140769dd2118763cc29bd0b711915863fe3866dd2b31130d6ee",
+        "jobs": 280,
+        "families": 5,
+        "official_time_limit_seconds": 671.4
+      },
+      {
+        "case_day_index": 47,
+        "case_day_number": 48,
+        "relative_path": "RealWorldInstances365/J_228_F_5_seed_280.txt",
+        "instance": "J_228_F_5_seed_280",
+        "instance_sha256": "41947032f7d4e1f65889d2b12b2da83af24421eedbc02cec77f480d814e58572",
+        "jobs": 228,
+        "families": 5,
+        "official_time_limit_seconds": 446.864
+      },
+      {
+        "case_day_index": 48,
+        "case_day_number": 49,
+        "relative_path": "RealWorldInstances365/J_80_F_5_seed_281.txt",
+        "instance": "J_80_F_5_seed_281",
+        "instance_sha256": "0aa6524ead55c6ebf149e48dba55b4eaeb1d0370c2527069c63e498d999083dd",
+        "jobs": 80,
+        "families": 5,
+        "official_time_limit_seconds": 59.4
+      },
+      {
+        "case_day_index": 49,
+        "case_day_number": 50,
+        "relative_path": "RealWorldInstances365/J_413_F_5_seed_282.txt",
+        "instance": "J_413_F_5_seed_282",
+        "instance_sha256": "d4dcde3d9e2f2966e0e997071255dbca14061e9f5acf7e12153a362c55767e25",
+        "jobs": 413,
+        "families": 5,
+        "official_time_limit_seconds": 1454.8365
+      },
+      {
+        "case_day_index": 50,
+        "case_day_number": 51,
+        "relative_path": "RealWorldInstances365/J_80_F_5_seed_283.txt",
+        "instance": "J_80_F_5_seed_283",
+        "instance_sha256": "d85fc63bb561ad6e14629161dbd3b4195d0f0b075378930e038515bad7c5f916",
+        "jobs": 80,
+        "families": 5,
+        "official_time_limit_seconds": 59.4
+      },
+      {
+        "case_day_index": 51,
+        "case_day_number": 52,
+        "relative_path": "RealWorldInstances365/J_86_F_5_seed_284.txt",
+        "instance": "J_86_F_5_seed_284",
+        "instance_sha256": "e98bfcd7fbea06828c529b9b1399f7c44a00e414be9c8fd2b05766f849e6aa8e",
+        "jobs": 86,
+        "families": 5,
+        "official_time_limit_seconds": 67.866
+      },
+      {
+        "case_day_index": 52,
+        "case_day_number": 53,
+        "relative_path": "RealWorldInstances365/J_367_F_5_seed_285.txt",
+        "instance": "J_367_F_5_seed_285",
+        "instance_sha256": "2f7e1dc7ffcaebbae0edc6edb3f0a30d44dbdb1df2dc8688ae8c8b6281cebaa9",
+        "jobs": 367,
+        "families": 5,
+        "official_time_limit_seconds": 1149.8565
+      },
+      {
+        "case_day_index": 53,
+        "case_day_number": 54,
+        "relative_path": "RealWorldInstances365/J_321_F_5_seed_286.txt",
+        "instance": "J_321_F_5_seed_286",
+        "instance_sha256": "b9eb322cd1a31e27e6cd844e4161db1767b877ab027004beeffc1538bfe944d8",
+        "jobs": 321,
+        "families": 5,
+        "official_time_limit_seconds": 880.8485
+      },
+      {
+        "case_day_index": 54,
+        "case_day_number": 55,
+        "relative_path": "RealWorldInstances365/J_354_F_5_seed_287.txt",
+        "instance": "J_354_F_5_seed_287",
+        "instance_sha256": "5d09a749dc7b6f52a2f7f6b55a0d9e65329748080a98df45c837c2ade6fcc466",
+        "jobs": 354,
+        "families": 5,
+        "official_time_limit_seconds": 1070.186
+      },
+      {
+        "case_day_index": 55,
+        "case_day_number": 56,
+        "relative_path": "RealWorldInstances365/J_214_F_5_seed_288.txt",
+        "instance": "J_214_F_5_seed_288",
+        "instance_sha256": "99fd2ea9982e234ed9bde512d266ffa5ca119937848add1b26111a26abd05cc7",
+        "jobs": 214,
+        "families": 5,
+        "official_time_limit_seconds": 394.266
+      },
+      {
+        "case_day_index": 56,
+        "case_day_number": 57,
+        "relative_path": "RealWorldInstances365/J_209_F_5_seed_289.txt",
+        "instance": "J_209_F_5_seed_289",
+        "instance_sha256": "79bbf173a03a4d5ac11574dd13abb536578a58a2721bf4f7dd29eee297ee8a78",
+        "jobs": 209,
+        "families": 5,
+        "official_time_limit_seconds": 376.2885
+      },
+      {
+        "case_day_index": 57,
+        "case_day_number": 58,
+        "relative_path": "RealWorldInstances365/J_347_F_5_seed_290.txt",
+        "instance": "J_347_F_5_seed_290",
+        "instance_sha256": "f3537ed7f46f9f86b2372664c68c2de8f02db8556c8400e0aa3213732450bc61",
+        "jobs": 347,
+        "families": 5,
+        "official_time_limit_seconds": 1028.4765
+      },
+      {
+        "case_day_index": 58,
+        "case_day_number": 59,
+        "relative_path": "RealWorldInstances365/J_407_F_5_seed_291.txt",
+        "instance": "J_407_F_5_seed_291",
+        "instance_sha256": "1ae4d24cdf8f5a9a32a80cdf5ccdceb55a3a257519de8923cab64bbd9367ac77",
+        "jobs": 407,
+        "families": 5,
+        "official_time_limit_seconds": 1413.0165
+      },
+      {
+        "case_day_index": 59,
+        "case_day_number": 60,
+        "relative_path": "RealWorldInstances365/J_144_F_5_seed_292.txt",
+        "instance": "J_144_F_5_seed_292",
+        "instance_sha256": "19b8ecce74c34d609fb45a2f9620bfb21539d4b8858272854844c0b3b8a39d24",
+        "jobs": 144,
+        "families": 5,
+        "official_time_limit_seconds": 181.256
+      },
+      {
+        "case_day_index": 60,
+        "case_day_number": 61,
+        "relative_path": "RealWorldInstances365/J_314_F_5_seed_293.txt",
+        "instance": "J_314_F_5_seed_293",
+        "instance_sha256": "7f3bd3cdf9752b074b3e4339606634e04f5de640a7f1ae41bf9bab8f119bc6df",
+        "jobs": 314,
+        "families": 5,
+        "official_time_limit_seconds": 843.066
+      },
+      {
+        "case_day_index": 61,
+        "case_day_number": 62,
+        "relative_path": "RealWorldInstances365/J_160_F_5_seed_294.txt",
+        "instance": "J_160_F_5_seed_294",
+        "instance_sha256": "32ebfae1be03f2af7ebdcf588cfdbf842c7c0afbce1e2df100adcb138b14be83",
+        "jobs": 160,
+        "families": 5,
+        "official_time_limit_seconds": 222.6
+      },
+      {
+        "case_day_index": 62,
+        "case_day_number": 63,
+        "relative_path": "RealWorldInstances365/J_214_F_5_seed_295.txt",
+        "instance": "J_214_F_5_seed_295",
+        "instance_sha256": "f24f899d77bd77fcb7ef7018682d1e24518bc850ddd6f6d4aa0bb46bf0eb7768",
+        "jobs": 214,
+        "families": 5,
+        "official_time_limit_seconds": 394.266
+      },
+      {
+        "case_day_index": 63,
+        "case_day_number": 64,
+        "relative_path": "RealWorldInstances365/J_107_F_5_seed_296.txt",
+        "instance": "J_107_F_5_seed_296",
+        "instance_sha256": "5a58a8cd14ff3eaf2e17498392329664bd24f6005827c029a529b462d70d6ede",
+        "jobs": 107,
+        "families": 5,
+        "official_time_limit_seconds": 102.3165
+      },
+      {
+        "case_day_index": 64,
+        "case_day_number": 65,
+        "relative_path": "RealWorldInstances365/J_339_F_5_seed_297.txt",
+        "instance": "J_339_F_5_seed_297",
+        "instance_sha256": "2983cabbbd6bf82aafbc784e147e5ab14d1d0280cad6c78409f01e326abc6a4e",
+        "jobs": 339,
+        "families": 5,
+        "official_time_limit_seconds": 981.8285
+      },
+      {
+        "case_day_index": 65,
+        "case_day_number": 66,
+        "relative_path": "RealWorldInstances365/J_175_F_5_seed_298.txt",
+        "instance": "J_175_F_5_seed_298",
+        "instance_sha256": "0180cda42fe6c9583710f7609b151b429a5b6d70b7f2dacd71760b2228ccae12",
+        "jobs": 175,
+        "families": 5,
+        "official_time_limit_seconds": 265.3125
+      },
+      {
+        "case_day_index": 66,
+        "case_day_number": 67,
+        "relative_path": "RealWorldInstances365/J_256_F_5_seed_299.txt",
+        "instance": "J_256_F_5_seed_299",
+        "instance_sha256": "2187856b5ae1fcaf439326c984d456e1271c8a788f847bf4d7ebe2d2a44104c0",
+        "jobs": 256,
+        "families": 5,
+        "official_time_limit_seconds": 562.056
+      },
+      {
+        "case_day_index": 67,
+        "case_day_number": 68,
+        "relative_path": "RealWorldInstances365/J_376_F_5_seed_300.txt",
+        "instance": "J_376_F_5_seed_300",
+        "instance_sha256": "5b4d0998f9186e7899c14e29d48eb2b42f54d19a323dc333417e868368dffcfe",
+        "jobs": 376,
+        "families": 5,
+        "official_time_limit_seconds": 1206.696
+      },
+      {
+        "case_day_index": 68,
+        "case_day_number": 69,
+        "relative_path": "RealWorldInstances365/J_274_F_5_seed_301.txt",
+        "instance": "J_274_F_5_seed_301",
+        "instance_sha256": "d99369950467bccf2fa58db9b193d905f1d3639f2152df4869e231c20f85b42d",
+        "jobs": 274,
+        "families": 5,
+        "official_time_limit_seconds": 643.146
+      },
+      {
+        "case_day_index": 69,
+        "case_day_number": 70,
+        "relative_path": "RealWorldInstances365/J_355_F_5_seed_302.txt",
+        "instance": "J_355_F_5_seed_302",
+        "instance_sha256": "b7ca186ef7803bf06ad83251300f5a92d8396ab67df10abe1ce24986a962c376",
+        "jobs": 355,
+        "families": 5,
+        "official_time_limit_seconds": 1076.2125
+      },
+      {
+        "case_day_index": 70,
+        "case_day_number": 71,
+        "relative_path": "RealWorldInstances365/J_86_F_5_seed_303.txt",
+        "instance": "J_86_F_5_seed_303",
+        "instance_sha256": "a21110de346103f96f3e7fc59c535d18c43dc001a758b7cd4b2fac62aeef7918",
+        "jobs": 86,
+        "families": 5,
+        "official_time_limit_seconds": 67.866
+      },
+      {
+        "case_day_index": 71,
+        "case_day_number": 72,
+        "relative_path": "RealWorldInstances365/J_138_F_5_seed_304.txt",
+        "instance": "J_138_F_5_seed_304",
+        "instance_sha256": "a36adfdd180f8fbf9add84f5d3834205b6cd7180354d5d522fe714e42d7e520d",
+        "jobs": 138,
+        "families": 5,
+        "official_time_limit_seconds": 166.874
+      },
+      {
+        "case_day_index": 72,
+        "case_day_number": 73,
+        "relative_path": "RealWorldInstances365/J_163_F_5_seed_305.txt",
+        "instance": "J_163_F_5_seed_305",
+        "instance_sha256": "0dd6d6bbc339e2bf67e951bdde8bf77f2f994e179c6205811c08fe3575433dfc",
+        "jobs": 163,
+        "families": 5,
+        "official_time_limit_seconds": 230.8365
+      },
+      {
+        "case_day_index": 73,
+        "case_day_number": 74,
+        "relative_path": "RealWorldInstances365/J_290_F_5_seed_306.txt",
+        "instance": "J_290_F_5_seed_306",
+        "instance_sha256": "0b767412d74aecfbbd1397e3c394bc7d318c31025ad883cb464681f066379047",
+        "jobs": 290,
+        "families": 5,
+        "official_time_limit_seconds": 719.85
+      },
+      {
+        "case_day_index": 74,
+        "case_day_number": 75,
+        "relative_path": "RealWorldInstances365/J_396_F_5_seed_307.txt",
+        "instance": "J_396_F_5_seed_307",
+        "instance_sha256": "3dd672af5a0cbbba91122769acc7e1ec1db638d8d00f172ba5d8cda972c81892",
+        "jobs": 396,
+        "families": 5,
+        "official_time_limit_seconds": 1337.936
+      },
+      {
+        "case_day_index": 75,
+        "case_day_number": 76,
+        "relative_path": "RealWorldInstances365/J_165_F_5_seed_308.txt",
+        "instance": "J_165_F_5_seed_308",
+        "instance_sha256": "66ce6992d00027f693cc877e0c62b7542c60b73df69b5f326c7fb10b0f10f68e",
+        "jobs": 165,
+        "families": 5,
+        "official_time_limit_seconds": 236.4125
+      },
+      {
+        "case_day_index": 76,
+        "case_day_number": 77,
+        "relative_path": "RealWorldInstances365/J_102_F_5_seed_309.txt",
+        "instance": "J_102_F_5_seed_309",
+        "instance_sha256": "b6eefa4a0635f18e11596ad1933c01c6b2cfaf8a404709f3f914e57de963088f",
+        "jobs": 102,
+        "families": 5,
+        "official_time_limit_seconds": 93.434
+      },
+      {
+        "case_day_index": 77,
+        "case_day_number": 78,
+        "relative_path": "RealWorldInstances365/J_352_F_5_seed_310.txt",
+        "instance": "J_352_F_5_seed_310",
+        "instance_sha256": "1c937e66b05f3a88a6cf7cf027fc72eda7579debcc030119d20ea5bc231dab8b",
+        "jobs": 352,
+        "families": 5,
+        "official_time_limit_seconds": 1058.184
+      },
+      {
+        "case_day_index": 78,
+        "case_day_number": 79,
+        "relative_path": "RealWorldInstances365/J_205_F_5_seed_311.txt",
+        "instance": "J_205_F_5_seed_311",
+        "instance_sha256": "1391291ddaaf7f4364c5d9661a4e0b919cc19c8f58e2401985360bfa629a2724",
+        "jobs": 205,
+        "families": 5,
+        "official_time_limit_seconds": 362.2125
+      },
+      {
+        "case_day_index": 79,
+        "case_day_number": 80,
+        "relative_path": "RealWorldInstances365/J_402_F_5_seed_312.txt",
+        "instance": "J_402_F_5_seed_312",
+        "instance_sha256": "3228d6f078dd9c00597686071ce8df71591997f6268f0d8d076b32b789a64898",
+        "jobs": 402,
+        "families": 5,
+        "official_time_limit_seconds": 1378.634
+      },
+      {
+        "case_day_index": 80,
+        "case_day_number": 81,
+        "relative_path": "RealWorldInstances365/J_359_F_5_seed_313.txt",
+        "instance": "J_359_F_5_seed_313",
+        "instance_sha256": "00562779225f7b099321de8f330373bc3718ff50d2b279fd55d68ad8044cdc57",
+        "jobs": 359,
+        "families": 5,
+        "official_time_limit_seconds": 1100.4885
+      },
+      {
+        "case_day_index": 81,
+        "case_day_number": 82,
+        "relative_path": "RealWorldInstances365/J_170_F_5_seed_314.txt",
+        "instance": "J_170_F_5_seed_314",
+        "instance_sha256": "1e8b5a8374cecdc761d25727780e34799e9ee1b63cf6c95ca53e44a70a61ddac",
+        "jobs": 170,
+        "families": 5,
+        "official_time_limit_seconds": 250.65
+      },
+      {
+        "case_day_index": 82,
+        "case_day_number": 83,
+        "relative_path": "RealWorldInstances365/J_279_F_5_seed_315.txt",
+        "instance": "J_279_F_5_seed_315",
+        "instance_sha256": "0844eec584504b7613ec873d4107e8cca008e4e037c4b421a0c001b6f38c882e",
+        "jobs": 279,
+        "families": 5,
+        "official_time_limit_seconds": 666.6485
+      },
+      {
+        "case_day_index": 83,
+        "case_day_number": 84,
+        "relative_path": "RealWorldInstances365/J_83_F_5_seed_316.txt",
+        "instance": "J_83_F_5_seed_316",
+        "instance_sha256": "a64869a114d71b4d27b06bad85b5d6dd6c8788da5b6f28f31b91ad738a4c5548",
+        "jobs": 83,
+        "families": 5,
+        "official_time_limit_seconds": 63.5565
+      },
+      {
+        "case_day_index": 84,
+        "case_day_number": 85,
+        "relative_path": "RealWorldInstances365/J_306_F_5_seed_317.txt",
+        "instance": "J_306_F_5_seed_317",
+        "instance_sha256": "ac757c03faf4e70ac90b6ef5497ea1e5e50cfa9788142e8293c0e8c1f72147e8",
+        "jobs": 306,
+        "families": 5,
+        "official_time_limit_seconds": 800.906
+      },
+      {
+        "case_day_index": 85,
+        "case_day_number": 86,
+        "relative_path": "RealWorldInstances365/J_427_F_5_seed_318.txt",
+        "instance": "J_427_F_5_seed_318",
+        "instance_sha256": "188465ed27948058e2790f7bcc0e9333f32ce9a4e5844722ede5082ad8046ba4",
+        "jobs": 427,
+        "families": 5,
+        "official_time_limit_seconds": 1554.7965
+      },
+      {
+        "case_day_index": 86,
+        "case_day_number": 87,
+        "relative_path": "RealWorldInstances365/J_161_F_5_seed_319.txt",
+        "instance": "J_161_F_5_seed_319",
+        "instance_sha256": "9da86e05d24b71459fd16dd4236ba806c987e7289b94ee623684fcc9dd21d628",
+        "jobs": 161,
+        "families": 5,
+        "official_time_limit_seconds": 225.3285
+      },
+      {
+        "case_day_index": 87,
+        "case_day_number": 88,
+        "relative_path": "RealWorldInstances365/J_298_F_5_seed_320.txt",
+        "instance": "J_298_F_5_seed_320",
+        "instance_sha256": "1b28976c4053b8a79d1c29b1f496f04f304f89238e9e9d1e58618a92b4aa0135",
+        "jobs": 298,
+        "families": 5,
+        "official_time_limit_seconds": 759.834
+      },
+      {
+        "case_day_index": 88,
+        "case_day_number": 89,
+        "relative_path": "RealWorldInstances365/J_211_F_5_seed_321.txt",
+        "instance": "J_211_F_5_seed_321",
+        "instance_sha256": "23022c651fdca4eb2d8c303ae609c88ec7712df6f765016f1cbebe0e864ce2f1",
+        "jobs": 211,
+        "families": 5,
+        "official_time_limit_seconds": 383.4285
+      },
+      {
+        "case_day_index": 89,
+        "case_day_number": 90,
+        "relative_path": "RealWorldInstances365/J_284_F_5_seed_322.txt",
+        "instance": "J_284_F_5_seed_322",
+        "instance_sha256": "548b702f885cd8af4d691eeac868c598dab7fd23499b834e71596d8376e78cc7",
+        "jobs": 284,
+        "families": 5,
+        "official_time_limit_seconds": 690.576
+      },
+      {
+        "case_day_index": 90,
+        "case_day_number": 91,
+        "relative_path": "RealWorldInstances365/J_127_F_5_seed_323.txt",
+        "instance": "J_127_F_5_seed_323",
+        "instance_sha256": "af5d2ab1cd693b71fbaef890ee4382ff1f376a13d8832449b005f1b605f27ff5",
+        "jobs": 127,
+        "families": 5,
+        "official_time_limit_seconds": 142.0965
+      }
+    ]
+  },
+  "known_source_differences": {
+    "paper_final_vs_notebook": {
+      "paper_final": {
+        "crossover_rate": 0.95,
+        "mutation_type": "insert"
+      },
+      "notebook_example": {
+        "crossover_rate": 0.8,
+        "mutation_type": "flip"
+      }
+    },
+    "roulette_direction": "released code samples in direct proportion to the minimization objective; formal reproduction preserves this behaviour",
+    "time_limit_semantics": "released GA checks the wall-clock limit only at generation boundaries and evaluates the final population after the loop; actual runtime can exceed the nominal paper limit and the overrun is reported per task",
+    "truncated_lower_bound": "public Notebook ends calculate_lower_bound with 'lower_bound = processin'; the lower bound is unused by FFCBSPT/GA acceptance and is omitted",
+    "diagnostic_re_evaluations": "the Notebook report() redundantly reevaluates the final population after solution_time is frozen; these print-only evaluations do not affect the selected schedule and are omitted from this refactor",
+    "random_stream_isolation": "the Notebook uses NumPy's unseeded global RNG; each DBD task here uses its own locked RandomState seed so multiprocessing order cannot change results and the seed set matches the other three algorithms",
+    "zero_release_padding": "released scheduler filters zero entries used for rectangular-array padding; this refactor stores explicit batches so a real batch released at minute 0 is scheduled instead of being mistaken for padding"
+  },
+  "interrupted_utc": "2026-08-27T02:05:49.704119+00:00",
+  "successful_tasks": 1001,
+  "failed_tasks": 0,
+  "last_session_wall_runtime_seconds": 10809.946110199999,
+  "wall_runtime_seconds": 73734.07830929998,
+  "completed_utc": "2026-08-27T06:29:50.379016+00:00"
+}

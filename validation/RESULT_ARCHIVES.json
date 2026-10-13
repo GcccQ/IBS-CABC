@@ -1,0 +1,26 @@
+[
+  {
+    "archive": "cssd-kg-edr/outputs/e7_cp_sat_ablation_20260825T161433740372Z/raw/results.jsonl.gz",
+    "path": "cssd-kg-edr/outputs/e7_cp_sat_ablation_20260825T161433740372Z/raw/results.jsonl",
+    "sha256": "0ff253e8969bb3a645bc6442c6b425eb87e6daaf4badbc0ef46ac8e7b8bc77ba",
+    "bytes": 4657314
+  },
+  {
+    "archive": "cssd-dbd-case-study/outputs/dbd_case_proxy91_10seeds_three_algorithms_20260827T083126700163Z/raw/results.jsonl.gz",
+    "path": "cssd-dbd-case-study/outputs/dbd_case_proxy91_10seeds_three_algorithms_20260827T083126700163Z/raw/results.jsonl",
+    "sha256": "5b3f072b3a989a8b432c861c4db5a53be0a5fa54e7211e9b696602f675a7baa3",
+    "bytes": 49409846
+  },
+  {
+    "archive": "kraul-dbd-reproduction/outputs/dbd_proxy91_10seeds_ffcbspt_kraul_ga_20260826T064333748261Z/raw/results.jsonl.gz",
+    "path": "kraul-dbd-reproduction/outputs/dbd_proxy91_10seeds_ffcbspt_kraul_ga_20260826T064333748261Z/raw/results.jsonl",
+    "sha256": "a1632e62cd72a39d14bc12bcbb1833637d9bcf08324d3612f8b9acc1e0d0fd23",
+    "bytes": 60655530
+  },
+  {
+    "archive": "kraul-dbd-reproduction/outputs/dbd_proxy91_10seeds_ffcbspt_kraul_ga_20260826T064333748261Z/tables/job_level_schedules.csv.gz",
+    "path": "kraul-dbd-reproduction/outputs/dbd_proxy91_10seeds_ffcbspt_kraul_ga_20260826T064333748261Z/tables/job_level_schedules.csv",
+    "sha256": "af9eae46ac32adf6a61b2f58d0d7874f5b805182ac7163a233c923c7b5d67038",
+    "bytes": 33972990
+  }
+]

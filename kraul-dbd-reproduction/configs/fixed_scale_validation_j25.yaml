@@ -1,0 +1,22 @@
+experiment:
+  name: fixed_scale_kraul_ga_validation_j25
+  contract: development
+  data_root: ../dataset
+  split: data/fixed_scale_validation_j25.txt
+  source_notebook: ../tmp/pdfs/kraul_experiment/Genetic_Algorithm_Example.ipynb
+  expected_instances: 1
+  expected_jobs: 25
+  expected_by_jobs:
+    25: 1
+  day_length_minutes: 1440
+  seeds: [101]
+  workers: 1
+  protocol:
+    name: paper_time_tau1
+    mode: official_time
+    tau: 1.0
+  algorithm:
+    name: kraul_ga
+    label: Kraul-GA
+    profile: paper_final
+    overrides: {}

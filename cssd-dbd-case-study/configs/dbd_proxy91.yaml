@@ -1,0 +1,87 @@
+experiment:
+  name: dbd_case_proxy91_three_algorithms
+  contract: formal_proxy91
+  data_root: ../dataset
+  split: data/case_three_month_proxy91.txt
+  expected_days: 91
+  expected_jobs: 22927
+  first_day_seed: 233
+  last_day_seed: 323
+  machines_stage1: 12
+  machines_stage2: 5
+  day_length_minutes: 1440
+  seeds: [101]
+  workers: 8
+  protocol:
+    name: paper_time_tau1
+    mode: official_time
+    tau: 1.0
+  algorithms:
+    - name: ibscabc
+      label: IBS-CABC
+      parameters:
+        colony_size: 20
+        abandonment_limit: 10
+        archive_size: 20
+        operator_attempts: 2
+        ejection_depth: 3
+        intensification_enabled: true
+        intensification_fraction: 0.90
+        intensification_max_evaluations: 9000
+        intensification_critical_batches: 8
+        assignment_repair_enabled: true
+        assignment_repair_seconds_per_family: 10.0
+        assignment_repair_workers: 1
+        assignment_repair_iterations: 3
+        assignment_repair_joint_max_jobs: 600
+        assignment_repair_max_jobs: 600
+        assignment_repair_allow_empty_batches: true
+        assignment_repair_time_fraction: 0.30
+        mathematical_repair_seconds: 45.0
+        onlooker_quality_weight: 0.60
+        onlooker_diversity_weight: 0.15
+        onlooker_bottleneck_weight: 0.25
+        delta_seed_pairs:
+          - [1.00, 1.00]
+          - [0.93, 1.00]
+          - [1.00, 0.95]
+          - [0.67, 0.78]
+          - [0.40, 0.52]
+          - [0.85, 0.85]
+          - [0.70, 0.70]
+        bottleneck_aware: true
+    - name: alns
+      label: ALNS
+      parameters:
+        population_size: 20
+        stagnation_limit: 10
+        candidate_attempts: 2
+        cache_capacity: 120
+        delta_seed_pairs:
+          - [1.00, 1.00]
+          - [0.93, 1.00]
+          - [1.00, 0.95]
+          - [0.67, 0.78]
+          - [0.40, 0.52]
+          - [0.85, 0.85]
+          - [0.70, 0.70]
+        reaction_factor: 0.20
+        initial_temperature_ratio: 0.01
+        final_temperature_ratio: 0.00001
+    - name: ts
+      label: TS
+      parameters:
+        population_size: 20
+        stagnation_limit: 10
+        candidate_attempts: 2
+        cache_capacity: 120
+        delta_seed_pairs:
+          - [1.00, 1.00]
+          - [0.93, 1.00]
+          - [1.00, 0.95]
+          - [0.67, 0.78]
+          - [0.40, 0.52]
+          - [0.85, 0.85]
+          - [0.70, 0.70]
+        neighborhood_size: 20
+        tabu_tenure: 10

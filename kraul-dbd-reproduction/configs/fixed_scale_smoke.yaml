@@ -1,0 +1,29 @@
+experiment:
+  name: fixed_scale_kraul_ga_smoke
+  contract: development
+  data_root: ../dataset
+  split: data/fixed_scale_smoke_two.txt
+  source_notebook: ../tmp/pdfs/kraul_experiment/Genetic_Algorithm_Example.ipynb
+  expected_instances: 2
+  expected_jobs: 125
+  expected_by_jobs:
+    25: 1
+    100: 1
+  day_length_minutes: 1440
+  seeds: [101]
+  workers: 2
+  protocol:
+    name: smoke_evaluations
+    mode: wall_clock
+    time_limit_seconds: 60.0
+    max_evaluations: 20
+  algorithm:
+    name: kraul_ga
+    label: Kraul-GA
+    profile: paper_final
+    overrides:
+      population_size: 10
+      max_elitism_percentage: 0.20
+      local_search_moves: 8
+      restart_interval: 5
+      max_restart_attempts: 1

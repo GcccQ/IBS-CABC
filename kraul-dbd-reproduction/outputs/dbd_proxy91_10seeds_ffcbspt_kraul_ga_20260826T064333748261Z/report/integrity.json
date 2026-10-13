@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "successful_records": 1001,
+  "raw_jsonl_lines": 1001,
+  "expected_records": 1001,
+  "errors": [],
+  "warnings": [
+    "released code samples in direct proportion to the minimization objective; formal reproduction preserves this behaviour",
+    "released GA checks the wall-clock limit only at generation boundaries and evaluates the final population after the loop; actual runtime can exceed the nominal paper limit and the overrun is reported per task",
+    "public Notebook ends calculate_lower_bound with 'lower_bound = processin'; the lower bound is unused by FFCBSPT/GA acceptance and is omitted",
+    "the Notebook report() redundantly reevaluates the final population after solution_time is frozen; these print-only evaluations do not affect the selected schedule and are omitted from this refactor",
+    "the Notebook uses NumPy's unseeded global RNG; each DBD task here uses its own locked RandomState seed so multiprocessing order cannot change results and the seed set matches the other three algorithms",
+    "released scheduler filters zero entries used for rectangular-array padding; this refactor stores explicit batches so a real batch released at minute 0 is scheduled instead of being mistaken for padding"
+  ],
+  "aggregation": {
+    "time_metrics_per_seed": "pooled device moments over the complete 91-day window",
+    "paper_table_standard_deviation": "sample standard deviation across independent three-month random seeds",
+    "utilization_primary": "arithmetic mean of daily active-horizon utilization",
+    "hourly": "average devices per day; completion hour modulo 24"
+  }
+}

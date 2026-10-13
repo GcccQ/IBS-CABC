@@ -1,0 +1,12 @@
+# 与参考论文表 3--5 一致：20 个 J25、365 个真实日实例、
+# J100/J250/J500/J1000 各 20 个实例，共 465 个实例。
+# 原论文没有报告独立随机重复次数，因此主复现实验每个实例运行一次。
+experiment:
+  name: paper_aligned_all465
+  selection:
+    split: data/splits/paper_all465.txt
+  protocols:
+    - {name: paper_time_tau1, mode: official_time, tau: 1.0}
+  seeds: [101]
+  algorithms:
+    - {name: ibscabc}

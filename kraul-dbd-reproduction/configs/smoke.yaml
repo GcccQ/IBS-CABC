@@ -1,0 +1,33 @@
+experiment:
+  name: smoke_ffcbspt_kraul_ga
+  contract: development
+  data_root: ../dataset
+  split: data/smoke_two_days.txt
+  source_notebook: ../tmp/pdfs/kraul_experiment/Genetic_Algorithm_Example.ipynb
+  expected_days: 2
+  expected_jobs: 664
+  first_day_seed: 233
+  last_day_seed: 234
+  machines_stage1: 12
+  machines_stage2: 5
+  capacities: [15, 11000]
+  day_length_minutes: 1440
+  seeds: [101]
+  workers: 2
+  protocol:
+    name: smoke_wall_clock
+    mode: wall_clock
+    time_limit_seconds: 0.25
+  algorithms:
+    - name: ffcbspt
+      label: FFCBSPT
+    - name: kraul_ga
+      label: Kraul-GA
+      profile: paper_final
+      overrides:
+        population_size: 10
+        max_elitism_percentage: 0.20
+        local_search_moves: 8
+        restart_interval: 5
+        max_restart_attempts: 1
+

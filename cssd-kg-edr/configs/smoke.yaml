@@ -1,0 +1,14 @@
+experiment:
+  name: smoke_ibscabc
+  selection:
+    split: data/splits/smoke.txt
+  protocols:
+    - {name: E80, mode: evaluations, max_evaluations: 80}
+  seeds: [101]
+  algorithms:
+    - name: ibscabc
+      parameters:
+        colony_size: 4
+        abandonment_limit: 5
+        archive_size: 8
+        assignment_repair_enabled: false

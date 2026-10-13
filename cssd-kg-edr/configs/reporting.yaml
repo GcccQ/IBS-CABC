@@ -1,0 +1,78 @@
+# 参考论文 Tables 3--5 中 Genetic 行的公开分组统计。
+# 这些数值只用于生成直观对照表；逐实例显著性检验必须使用作者源码重跑结果。
+published_reference:
+  small_j25:
+    published_gap_lb_percent: 9.74
+    published_runtime_seconds: 9.81
+  real365:
+    published_gap_lb_percent: 12.70
+    published_average_time_in_system: 477
+    published_average_time_in_system_std: 66
+    published_objective: 310390
+    published_objective_std: 125830
+    published_makespan: 1693
+    published_makespan_std: 105
+    published_utilization_stage1_percent: 39.07
+    published_utilization_stage2_percent: 56.87
+  fixed_j100:
+    published_gap_lb_percent: 13.25
+    published_average_time_in_system: 481
+    published_average_time_in_system_std: 56
+    published_objective: 129202
+    published_objective_std: 5754
+    published_makespan: 1615
+    published_makespan_std: 74
+    published_utilization_stage1_percent: 19.45
+    published_utilization_stage2_percent: 29.14
+  fixed_j250:
+    published_gap_lb_percent: 7.85
+    published_average_time_in_system: 481
+    published_average_time_in_system_std: 56
+    published_objective: 297876
+    published_objective_std: 14445
+    published_makespan: 1664
+    published_makespan_std: 118
+    published_utilization_stage1_percent: 36.35
+    published_utilization_stage2_percent: 51.95
+  fixed_j500:
+    published_gap_lb_percent: 12.35
+    published_average_time_in_system: 468
+    published_average_time_in_system_std: 119
+    published_objective: 638982
+    published_objective_std: 59192
+    published_makespan: 1929
+    published_makespan_std: 247
+    published_utilization_stage1_percent: 65.84
+    published_utilization_stage2_percent: 82.73
+  fixed_j1000:
+    published_gap_lb_percent: 34.15
+    published_average_time_in_system: 918
+    published_average_time_in_system_std: 251
+    published_objective: 1724170
+    published_objective_std: 249863
+    published_makespan: 2993
+    published_makespan_std: 487
+    published_utilization_stage1_percent: 83.41
+    published_utilization_stage2_percent: 89.70
+
+# Paper Table 8, Genetic rows. These are descriptive published references only;
+# no baseline implementation is included in this repository.
+published_table8_ga:
+  DBD:
+    time_in_system_mean: 602
+    time_in_system_std: 254
+    waiting_stage1_mean: 118
+    waiting_stage1_std: 174
+    waiting_stage2_mean: 60
+    waiting_stage2_std: 84
+    utilization_stage1_percent: 56.95
+    utilization_stage2_percent: 59.96
+  AIO:
+    time_in_system_mean: 797
+    time_in_system_std: 771
+    waiting_stage1_mean: 144
+    waiting_stage1_std: 333
+    waiting_stage2_mean: 188
+    waiting_stage2_std: 597
+    utilization_stage1_percent: 53.57
+    utilization_stage2_percent: 59.00

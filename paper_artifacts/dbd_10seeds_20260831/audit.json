@@ -1,0 +1,45 @@
+{
+  "raw_sources": [
+    {
+      "path": "G:\\article\\IBS-CABC_reproducibility_package\\kraul-dbd-reproduction\\outputs\\dbd_proxy91_10seeds_ffcbspt_kraul_ga_20260826T064333748261Z\\raw\\results.jsonl",
+      "records": 1001,
+      "sha256": "a1632e62cd72a39d14bc12bcbb1833637d9bcf08324d3612f8b9acc1e0d0fd23"
+    },
+    {
+      "path": "G:\\article\\IBS-CABC_reproducibility_package\\cssd-dbd-case-study\\outputs\\dbd_case_proxy91_10seeds_three_algorithms_20260827T083126700163Z\\raw\\results.jsonl",
+      "records": 2730,
+      "sha256": "5b3f072b3a989a8b432c861c4db5a53be0a5fa54e7211e9b696602f675a7baa3"
+    }
+  ],
+  "records": 3731,
+  "complete_seed_runs": 40,
+  "deterministic_runs": 1,
+  "max_seed_aggregate_error": 2.842170943040401e-14,
+  "duplicate_tasks": 0,
+  "missing_tasks": 0,
+  "infeasible_tasks": 0,
+  "all_daily_instance_hashes_match": true,
+  "status": "PASS",
+  "dataset_sha256": "b3fa396eeaec8e71feaa720b2425ada102f57531cf288c39bd9b6b94c5f94116",
+  "window": "RealWorldInstances365 instance seeds 233..323; 91-day proxy window; 22927 jobs",
+  "optimizer_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "ci_method": "pointwise percentile bootstrap of complete seed curves",
+  "bootstrap_resamples": 10000,
+  "bootstrap_rng_seed": 20260831,
+  "maximum_queue_area_error_minutes": 0.0,
+  "maximum_queue_table_waiting_error_minutes": 2.3283064365386963e-10,
+  "generated_utc": "2026-09-12T16:33:53.914782+00:00",
+  "algorithm_code_modified": false,
+  "experiments_rerun": false
+}

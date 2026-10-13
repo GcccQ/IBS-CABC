@@ -1,0 +1,17 @@
+# Formal IBS-CABC J25 extension for the fixed-scale comparison.
+experiment:
+  name: e4_fixed_j25
+  report_template: e4
+  selection:
+    split: data/splits/paper_small25.txt
+  protocols:
+    - {name: paper_time_tau1, mode: official_time, tau: 1.0}
+  seeds: [101]
+  evidence_contract:
+    instances: 20
+    scenarios: 1
+    algorithm_labels: 1
+  algorithms:
+    - name: ibscabc
+      parameters:
+        assignment_repair_workers: 1

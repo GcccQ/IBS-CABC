@@ -1,0 +1,77 @@
+# Windows-friendly fixed-scale rerun profile.
+# All algorithms use 24 outer workers and one internal thread per task.
+name: fixed_30_20_windows24
+mode: formal
+data_root: data/formal/instances
+workers: 24
+worker_recycle_tasks: 8
+heartbeat_seconds: 15
+protocol: {name: paper_time_tau1, mode: official_time, tau: 1.0}
+scales:
+  100:
+    split: data/formal/splits/paper_fixed_j100.txt
+    expected_instances: 20
+    seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+  250:
+    split: data/formal/splits/paper_fixed_j250.txt
+    expected_instances: 20
+    seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+  500:
+    split: data/formal/splits/paper_fixed_j500.txt
+    expected_instances: 20
+    seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  1000:
+    split: data/formal/splits/paper_fixed_j1000.txt
+    expected_instances: 20
+    seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+algorithms:
+  alns:
+    population_size: 20
+    stagnation_limit: 10
+    candidate_attempts: 2
+    cache_capacity: 120
+    delta_seed_pairs: &delta_pairs [[1.00, 1.00], [0.93, 1.00], [1.00, 0.95], [0.67, 0.78], [0.40, 0.52], [0.85, 0.85], [0.70, 0.70]]
+    reaction_factor: 0.20
+    initial_temperature_ratio: 0.01
+    final_temperature_ratio: 0.00001
+  ts:
+    population_size: 20
+    stagnation_limit: 10
+    candidate_attempts: 2
+    cache_capacity: 120
+    delta_seed_pairs: *delta_pairs
+    neighborhood_size: 20
+    tabu_tenure: 10
+  kraul_ga:
+    profile: paper_final
+    overrides: {}
+  ibscabc:
+    colony_size: 20
+    abandonment_limit: 10
+    archive_size: 20
+    operator_attempts: 2
+    ejection_depth: 3
+    intensification_enabled: true
+    intensification_fraction: 0.90
+    intensification_max_evaluations: 9000
+    intensification_critical_batches: 8
+    assignment_repair_enabled: true
+    assignment_repair_seconds_per_family: 10.0
+    assignment_repair_workers: 1
+    assignment_repair_iterations: 3
+    assignment_repair_joint_max_jobs: 600
+    assignment_repair_max_jobs: 600
+    assignment_repair_allow_empty_batches: true
+    assignment_repair_time_fraction: 0.30
+    mathematical_repair_seconds: 45.0
+    onlooker_quality_weight: 0.60
+    onlooker_diversity_weight: 0.15
+    onlooker_bottleneck_weight: 0.25
+    delta_seed_pairs: *delta_pairs
+    bottleneck_aware: true
+statistics:
+  bootstrap_resamples: 10000
+  bootstrap_seed: 20260831
+  wilcoxon_input: paired_instance_mean_objective_differences
+  holm_family: four_scales_and_overall
+  rpr_scope: [alns, ts, kraul_ga, ibscabc]

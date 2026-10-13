@@ -1,0 +1,6 @@
+﻿scale,instances,median_gain_percent,bootstrap_ci95_low_percent,bootstrap_ci95_high_percent,wilcoxon_p_two_sided,holm_p_five_tests,rank_biserial,wins,ties,losses,W_T_L,statistical_unit,wilcoxon_input,holm_family_complete
+J100,20,8.686951658873248,8.030329173414724,9.33695348026566,1.9073486328125e-06,7.62939453125e-06,1.0,20,0,0,20/0/0,instance represented by mean across repetitions,raw paired mean-objective differences,True
+J250,20,2.8654948640262288,2.1354666570503706,3.527787487766153,1.9073486328125e-06,7.62939453125e-06,1.0,20,0,0,20/0/0,instance represented by mean across repetitions,raw paired mean-objective differences,True
+J500,20,0.8288684014500425,0.5610228446662853,0.9965641305340436,3.814697265625e-06,7.62939453125e-06,0.9904761904761905,19,0,1,19/0/1,instance represented by mean across repetitions,raw paired mean-objective differences,True
+J1000,20,3.719948818598999,2.8207486328046105,5.229455860902595,9.5367431640625e-06,9.5367431640625e-06,0.9714285714285714,19,0,1,19/0/1,instance represented by mean across repetitions,raw paired mean-objective differences,True
+Overall,80,3.393502677352195,2.882810596892269,3.7067009511285662,7.861634418607227e-14,3.930817209303613e-13,0.9617283950617284,78,0,2,78/0/2,instance represented by mean across repetitions,raw paired mean-objective differences,True

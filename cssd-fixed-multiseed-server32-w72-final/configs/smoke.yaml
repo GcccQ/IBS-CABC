@@ -1,0 +1,24 @@
+# Infrastructure validation only: never merge with formal evidence.
+extends: fixed_30_20.yaml
+name: smoke_30_20_infrastructure
+mode: smoke
+workers: 2
+heartbeat_seconds: 2
+protocol: {name: smoke_one_second, mode: wall_clock, time_limit_seconds: 1.0}
+scales:
+  100:
+    split: data/smoke_j100.txt
+    expected_instances: 2
+    seeds: [1, 2]
+  250:
+    split: data/smoke_j250.txt
+    expected_instances: 2
+    seeds: [1, 2]
+  500:
+    split: data/smoke_j500.txt
+    expected_instances: 2
+    seeds: [1, 2]
+  1000:
+    split: data/smoke_j1000.txt
+    expected_instances: 2
+    seeds: [1, 2]

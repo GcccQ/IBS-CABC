@@ -1,0 +1,17 @@
+# E4 / Table 5: J=100/250/500/1000, 20 instances per size.
+experiment:
+  name: e4_fixed_scale
+  report_template: e4
+  selection:
+    split: data/splits/paper_fixed.txt
+  protocols:
+    - {name: paper_time_tau1, mode: official_time, tau: 1.0}
+  seeds: [101]
+  evidence_contract:
+    instances: 80
+    scenarios: 1
+    algorithm_labels: 1
+  algorithms:
+    - name: ibscabc
+      parameters:
+        assignment_repair_workers: 1

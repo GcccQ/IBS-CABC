@@ -1,0 +1,18 @@
+# Development screening only: all 80 fixed-scale instances at 5% of the
+# published time formula. Never report these rows as the formal Table 5 result.
+experiment:
+  name: development_fixed_scale_5pct
+  report_template: e4
+  selection:
+    split: data/splits/paper_fixed.txt
+  protocols:
+    - {name: development_time_tau005, mode: official_time, tau: 0.05}
+  seeds: [101]
+  evidence_contract:
+    instances: 80
+    scenarios: 1
+    algorithm_labels: 1
+  algorithms:
+    - name: ibscabc
+      parameters:
+        assignment_repair_workers: 1

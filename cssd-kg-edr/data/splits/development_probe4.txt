@@ -1,0 +1,4 @@
+Instances100-1000/J_100/J_100_F_5_seed_0.txt
+Instances100-1000/J_250/J_250_F_5_seed_0.txt
+Instances100-1000/J_500/J_500_F_5_seed_0.txt
+Instances100-1000/J_1000/J_1000_F_5_seed_0.txt

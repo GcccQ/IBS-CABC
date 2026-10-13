@@ -1,0 +1,30 @@
+# Paper Table 9 machine-count path, applied to IBS-CABC under AIO only.
+experiment:
+  name: case_aio_machine_sensitivity_proxy91
+  selection:
+    split: data/splits/case_three_month_proxy91.txt
+  case_study:
+    days: 91
+    total_jobs: 22927
+    first_seed: 233
+    last_seed: 323
+    require_contiguous_seeds: true
+    source_status: locked_proxy
+    metadata: data/case_three_month_proxy91.yaml
+  day_length_minutes: 1440
+  planning_modes: [AIO]
+  scenarios:
+    - {name: base, machines_stage1: 12, machines_stage2: 5}
+    - {name: stage2_m3, machines_stage1: 12, machines_stage2: 3}
+    - {name: stage2_m4, machines_stage1: 12, machines_stage2: 4}
+    - {name: stage2_m6, machines_stage1: 12, machines_stage2: 6}
+    - {name: stage2_m7, machines_stage1: 12, machines_stage2: 7}
+    - {name: stage1_m10, machines_stage1: 10, machines_stage2: 5}
+    - {name: stage1_m11, machines_stage1: 11, machines_stage2: 5}
+    - {name: stage1_m13, machines_stage1: 13, machines_stage2: 5}
+    - {name: stage1_m14, machines_stage1: 14, machines_stage2: 5}
+  protocols:
+    - {name: paper_time_tau1, mode: official_time, tau: 1.0}
+  seeds: [101]
+  algorithms:
+    - {name: ibscabc}

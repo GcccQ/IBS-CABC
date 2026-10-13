@@ -1,0 +1,27 @@
+experiment:
+  name: dbd_proxy91_10seeds_ffcbspt_kraul_ga
+  contract: formal_proxy91_multiseed
+  data_root: ../dataset
+  split: data/case_three_month_proxy91.txt
+  source_notebook: ../tmp/pdfs/kraul_experiment/Genetic_Algorithm_Example.ipynb
+  expected_days: 91
+  expected_jobs: 22927
+  first_day_seed: 233
+  last_day_seed: 323
+  machines_stage1: 12
+  machines_stage2: 5
+  capacities: [15, 11000]
+  day_length_minutes: 1440
+  seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  workers: 8
+  protocol:
+    name: paper_time_tau1
+    mode: official_time
+    tau: 1.0
+  algorithms:
+    - name: ffcbspt
+      label: FFCBSPT
+    - name: kraul_ga
+      label: Kraul-GA
+      profile: paper_final
+      overrides: {}

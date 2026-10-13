@@ -1,0 +1,9 @@
+# Exploratory mixed-scale subset. Fixed before running; not formal evidence.
+Instances 25/J_25_F_5_seed_0.txt
+Instances 25/J_25_F_5_seed_100.txt
+Instances100-1000/J_100/J_100_F_5_seed_0.txt
+Instances100-1000/J_100/J_100_F_5_seed_100.txt
+Instances100-1000/J_250/J_250_F_5_seed_0.txt
+RealWorldInstances365/J_70_F_5_seed_139.txt
+RealWorldInstances365/J_246_F_5_seed_170.txt
+RealWorldInstances365/J_431_F_5_seed_151.txt

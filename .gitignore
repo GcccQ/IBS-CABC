@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+reruns/
+dataset/
+tmp/
+**/data/formal/instances/
+**/outputs/**/raw/results.jsonl
+**/outputs/**/raw/*.unpacking
+**/outputs/**/tables/job_level_schedules.csv
+*.download

@@ -1,0 +1,7 @@
+numpy==2.2.6
+scipy==1.15.3
+ortools==9.15.6755
+PyYAML==6.0.3
+matplotlib==3.10.9
+tqdm==4.67.1
+pytest==9.1.1

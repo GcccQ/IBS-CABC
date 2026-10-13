@@ -1,0 +1,104 @@
+# E1 / Table 2: L9 parameter calibration on the 20 J=100 instances.
+# RPI is computed after averaging the three seeds for each
+# (configuration, instance), then using the best configuration value for that
+# instance as MinSol.
+experiment:
+  name: e1_parameter_calibration
+  report_template: e1
+  selection:
+    split: data/splits/paper_fixed_j100.txt
+  protocols:
+    - {name: paper_time_tau1, mode: official_time, tau: 1.0}
+  seeds: [101, 202, 303]
+  calibration_parameters:
+    - colony_size
+    - archive_size
+    - abandonment_limit
+    - operator_attempts
+    - intensification_fraction
+  evidence_contract:
+    instances: 20
+    scenarios: 1
+    algorithm_labels: 9
+  algorithms:
+    - name: ibscabc
+      label: L9_01
+      parameters:
+        colony_size: 12
+        archive_size: 12
+        abandonment_limit: 6
+        operator_attempts: 1
+        intensification_fraction: 0.90
+        assignment_repair_workers: 1
+    - name: ibscabc
+      label: L9_02
+      parameters:
+        colony_size: 12
+        archive_size: 12
+        abandonment_limit: 10
+        operator_attempts: 3
+        intensification_fraction: 0.80
+        assignment_repair_workers: 1
+    - name: ibscabc
+      label: L9_03
+      parameters:
+        colony_size: 12
+        archive_size: 12
+        abandonment_limit: 16
+        operator_attempts: 2
+        intensification_fraction: 0.95
+        assignment_repair_workers: 1
+    - name: ibscabc
+      label: L9_04
+      parameters:
+        colony_size: 20
+        archive_size: 20
+        abandonment_limit: 6
+        operator_attempts: 3
+        intensification_fraction: 0.95
+        assignment_repair_workers: 1
+    - name: ibscabc
+      label: L9_05_default
+      parameters:
+        colony_size: 20
+        archive_size: 20
+        abandonment_limit: 10
+        operator_attempts: 2
+        intensification_fraction: 0.90
+        assignment_repair_workers: 1
+    - name: ibscabc
+      label: L9_06
+      parameters:
+        colony_size: 20
+        archive_size: 20
+        abandonment_limit: 16
+        operator_attempts: 1
+        intensification_fraction: 0.80
+        assignment_repair_workers: 1
+    - name: ibscabc
+      label: L9_07
+      parameters:
+        colony_size: 32
+        archive_size: 32
+        abandonment_limit: 6
+        operator_attempts: 2
+        intensification_fraction: 0.80
+        assignment_repair_workers: 1
+    - name: ibscabc
+      label: L9_08
+      parameters:
+        colony_size: 32
+        archive_size: 32
+        abandonment_limit: 10
+        operator_attempts: 1
+        intensification_fraction: 0.95
+        assignment_repair_workers: 1
+    - name: ibscabc
+      label: L9_09
+      parameters:
+        colony_size: 32
+        archive_size: 32
+        abandonment_limit: 16
+        operator_attempts: 3
+        intensification_fraction: 0.90
+        assignment_repair_workers: 1

@@ -1,0 +1,18 @@
+﻿item,value
+CPU,"AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD"
+Logical CPUs,16
+Memory (GiB),31.31
+Operating system,Windows-10-10.0.26100-SP0
+Python,3.10.5
+External independent-run workers,8
+Threads per IBS-CABC run,1
+Assignment repair workers,1
+Stopping rule,"paper formula, tau=1, cap=1800 s; elapsed-time clock matching the author's released time.time() implementation"
+Primary objective,sum of stage-2 completion times
+Utilization denominator,stage-specific dynamic active horizon
+Package PyYAML,6.0.3
+Package matplotlib,3.10.9
+Package numpy,2.2.6
+Package ortools,9.15.6755
+Package scipy,1.15.3
+Package tqdm,4.67.1
